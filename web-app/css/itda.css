@@ -1,0 +1,1588 @@
+#dialogAdImage{z-index: 1002; outline: 0px none; top: 0px; bottom: 0px; left: 0px; right: 0px; position: fixed; color:#414141; opacity:.97; background:#414141; margin:auto;}
+#dialogCloseBtn{position:fixed;top:10px;right:30px}
+textarea{resize:none}
+.height-467{height:434px !important}/*561*/
+.unavailable{color: #999999;}
+.red{color: #9A2b17;}
+.logo {
+	width:1024px;
+	height:103px;
+	background:url(/images/itda_nav.png) 0px 0px;
+	border:0px ;	
+}	
+.summaryText {font-size: 14px; font-family: arial; line-height: 100%;}
+
+.summaryText-hr-td {font-size: 14px; font-family: arial; line-height: 100%; padding:5px 0px}
+
+.center{text-align:center;margin-left:auto;margin-right:auto;}
+
+.middle{ vertical-align: middle; text-align:middle; }
+.vbottom{ vertical-align: bottom;}
+
+.right
+{
+position:absolute;
+right:0px;
+}	
+
+.fright{float:right}	
+.fleft{float:left}
+.clear{clear:both}
+
+.left-element { float: left; width: 49%}
+
+.right-element {
+   float: right;
+   width: 49%;
+   text-align: right; /* depends on element width */
+   }
+
+ul#itda-menu2 {
+	margin: 0px; padding: 0px;
+	width: 1024px; /*margin: auto;*/
+	list-style: none;
+}
+
+ul#itda-menu2 li { display: inline; }
+	
+ul#itda-menu2 li a {
+	display: block; float: left; height: 54px;
+	background-image: url(/images/itda_nav.png);
+	text-indent: -9999px;
+}
+
+ul#itda-menu2 li a.greyBar2 {width: 231px; background-position: 0px -157px;}
+ul#itda-menu2 li a.home2 {width: 159px; background-position: -231px -157px;}
+ul#itda-menu2 li a.archive2 {width: 159px; background-position: -390px -157px;}
+ul#itda-menu2 li a.planner2 {width: 160px; background-position: -549px -157px;}
+ul#itda-menu2 li a.tracker2 {width: 159px; background-position: -709px -157px;}
+ul#itda-menu2 li a.blog2 {width: 156px; background-position: -868px -157px;}
+ul#itda-menu2 li a.home2:hover, ul#itda-menu2 li a.home2:focus, ul#itda-menu2 li a.home2.itda-nav-active {
+	background-image: url(/images/itda_nav.png); background-position: -231px -103px;
+}
+ul#itda-menu2 li a.archive2:hover, ul#itda-menu2 li a.archive2:focus, ul#itda-menu2 li a.archive2.itda-nav-active {
+	background-image: url(/images/itda_nav.png); background-position: -390px -103px;
+}
+ul#itda-menu2 li a.planner2:hover, ul#itda-menu2 li a.planner2:focus, ul#itda-menu2 li a.planner2.itda-nav-active {
+	background-image: url(/images/itda_nav.png); background-position: -549px -103px;
+}
+ul#itda-menu2 li a.tracker2:hover, ul#itda-menu2 li a.tracker2:focus, ul#itda-menu2 li a.tracker2.itda-nav-active {
+	background-image: url(/images/itda_nav.png); background-position: -709px -103px;
+}
+ul#itda-menu2 li a.blog2:hover, ul#itda-menu2 li a.blog2:focus, ul#itda-menu2 li a.blog2.itda-nav-active {
+	background-image: url(/images/itda_nav.png); background-position: -868px -103px;
+}
+/*************/
+
+ul#itda-menu {
+	margin: 0px; padding: 0px;
+	width: 1024px; /*margin: auto;*/
+	list-style: none;
+}
+
+ul#itda-menu li { display: inline; }
+	
+ul#itda-menu li a {
+	display: block; float: left; height: 54px;
+	background-image: url(/images/itd/nav/mkt_nav.jpg); text-indent: -9999px;
+}
+
+	ul#itda-menu li a.home {
+		width: 231px; background-position: 0px 0px;	
+	}
+	
+	ul#itda-menu li a.about {
+		width: 159px; background-position: -231px 0px;	
+	}
+	
+	ul#itda-menu li a.tour {
+		width: 159px; background-position: -390px 0px;	
+	}
+	
+	ul#itda-menu li a.pricing {
+		width: 160px; background-position: -549px 0px;	
+	}
+	
+	ul#itda-menu li a.signup {
+		width: 159px; background-position: -709px 0px;	
+	}
+
+	ul#itda-menu li a.blog {
+		width: 156px; background-position: -868px 0px;	
+	}
+	
+	ul#itda-menu li a.home:hover, ul#itda-menu li a.home:focus {
+		background-image: url(/images/itd/nav/mkt_nav.jpg);	
+		background-position: 0px -54px;
+	}
+	
+	ul#itda-menu li a.about:hover, ul#itda-menu li a.about:focus {
+		background-image: url(/images/itd/nav/mkt_nav.jpg);	
+		background-position: -231px -54px;
+	}
+	
+	ul#itda-menu li a.tour:hover, ul#itda-menu li a.tour:focus {
+		background-image: url(/images/itd/nav/mkt_nav.jpg);	
+		background-position: -390px -54px
+	}
+	
+	ul#itda-menu li a.pricing:hover, ul#itda-menu li a.pricing:focus {
+		background-image: url(/images/itd/nav/mkt_nav.jpg);	
+		background-position: -549px -54px
+	}
+	
+	ul#itda-menu li a.signup:hover, ul#itda-menu li a.signup:focus {
+		background-image: url(/images/itd/nav/mkt_nav.jpg);	
+		background-position: -709px -54px
+	}
+	
+	ul#itda-menu li a.blog:hover, ul#itda-menu li a.blog:focus {
+		background-image: url(/images/itd/nav/mkt_nav.jpg);	
+		background-position: -868px -54px
+	}
+
+a, img { 
+	outline-style: none;
+	outline-width: 0px;
+	border: 0px;
+}
+
+	/* reg */
+	.add_office {
+	width:126px;
+	height:29px;
+	background:url(/images/itd/reg/buttons_step_1.jpg) -5px -5px;
+	border:0;
+	}
+	.view_territory {
+	width:81px;
+	height:28px;
+	background:url(/images/itd/reg/next_button.jpg) -0px 0px;
+	border:0px ;
+	}
+.reserve_territory {
+	width:276px;
+	height:29px;
+	background:url(/images/itd/reg/buttons_step_2.jpg) -5px -5px;
+	border:0;
+	}
+.purchase {
+	width:125px;
+	height:29px;
+	background:url(/images/itd/reg/buttons_step_3.jpg) -5px -5px;
+	border:0;
+	}
+
+.back {
+	width:100px;
+	height:29px;
+	background:url(/images/itd/reg/buttons_step_2.jpg) -5px 32px;
+	border:0px ;
+	}
+.start_setup {
+	width:264px;
+	height:26px;
+	background:url(/images/itd/nav2/buttons_2.jpg) -5px -5px;
+	border:0;
+	}		
+.add_publication {
+	width:270px;
+	height:28px;
+	background:url(/images/itd/nav2/buttons_set_up1.jpg) -5px -5px;
+	border:0px;
+	}
+
+.add_vendor {
+	width:138px;
+	height:29px;
+	background:url(/images/itd/nav2/buttons_set_up2.jpg) -5px -5px;
+	border:0px;
+	}
+.add_manufacturer {
+	width:184px;
+	height:29px;
+	background:url(/images/itd/nav2/buttons_set_up3.jpg) -5px -5px;
+	border:0px;
+	}
+.add_competitor {
+	width:164px;
+	height:29px;
+	background:url(/images/itd/nav2/buttons_set_up4.jpg) -5px -5px;
+	border:0px;
+	}
+
+.done {
+	width:85px;
+	height:29px;
+	background:url(/images/itd/nav2/buttons_set_up1.jpg) -5px 32px;
+	border:0px;
+	}	
+
+a.portfolio:link {color:#ffffff; text-decoration: none; font-size: 12px; font-weight: bold; font-family: arial;}
+a.portfolio:visited {color:#ffffff; text-decoration: none; font-size: 12px; font-weight: bold; font-family: arial;}
+a.portfolio:hover {color:#dfc24a; text-decoration: none; font-size: 12px; font-weight: bold; font-family: arial; }
+
+/******************/
+ul#itda-setup-tab, 
+ul#itda-setup-tab-vendor,
+ul#itda-setup-tab-competitor,
+ul#itda-setup-tab-manufacturer {
+	margin: 0px; padding: 0px;
+	width: 900px; /*margin: auto;*/
+	list-style: none;
+}
+
+ul#itda-setup-tab li, 
+ul#itda-setup-tab-vendor li,
+ul#itda-setup-tab-competitor li,
+ul#itda-setup-tab-manufacturer li { display: inline; }
+	
+ul#itda-setup-tab li a {
+	display: block; float: left; height: 40px;
+	background-image: url(/images/itd/publication_tab.jpg);
+	text-indent: -9999px;
+}
+
+ul#itda-setup-tab li div {
+	display: block; float: left; height: 40px;
+	background-image: url(/images/itd/publication_tab.jpg);
+	text-indent: -9999px;
+}
+
+ul#itda-setup-tab-vendor li a {
+	display: block; float: left; height: 40px;
+	background-image: url(/images/itd/vendor_tab.png);
+	text-indent: -9999px;
+}
+
+ul#itda-setup-tab-vendor li div {
+	display: block; float: left; height: 40px;
+	background-image: url(/images/itd/vendor_tab.png);
+	text-indent: -9999px;
+}
+ul#itda-setup-tab-manufacturer li a {
+	display: block; float: left; height: 40px;
+	background-image: url(/images/itd/manufacturer_tab.png);
+	text-indent: -9999px;
+}
+
+ul#itda-setup-tab-manufacturer li div {
+	display: block; float: left; height: 40px;
+	background-image: url(/images/itd/manufacturer_tab.png);
+	text-indent: -9999px;
+}
+
+ul#itda-setup-tab-competitor li a {
+	display: block; float: left; height: 40px;
+	background-image: url(/images/itd/competitor_tab.png);
+	text-indent: -9999px;
+}
+
+ul#itda-setup-tab-competitor li div {
+	display: block; float: left; height: 40px;
+	background-image: url(/images/itd/competitor_tab.png);
+	text-indent: -9999px;
+}
+
+ul#itda-setup-tab-competitor li a.news, 
+ul#itda-setup-tab-manufacturer li a.news,
+ul#itda-setup-tab-vendor li a.news  {
+		width: 222px; background-position: -0px -0px;
+	}
+	
+ul#itda-setup-tab li a.vendor, 
+ul#itda-setup-tab-manufacturer li a.vendor,
+ul#itda-setup-tab-competitor li a.vendor
+{
+		width: 149px; background-position: -227px -0px;
+}
+	
+ul#itda-setup-tab li a.manufacturer,
+ul#itda-setup-tab-competitor li a.manufacturer,
+ul#itda-setup-tab-vendor li a.manufacturer {
+	width: 141px; background-position: -381px -0px;
+}
+
+ul#itda-setup-tab li a.competitor,
+ul#itda-setup-tab-manufacturer li a.competitor,
+ul#itda-setup-tab-vendor li a.competitor {
+	width: 139px; background-position: -527px -0px;
+}
+
+ul#itda-setup-tab li div.space,
+ul#itda-setup-tab-vendor li div.space,
+ul#itda-setup-tab-competitor li div.space,
+ul#itda-setup-tab-manufacturer li div.space
+{
+	width: 5px; background-position: -222px -0px;
+}
+
+ul#itda-setup-tab-vendor li div.space-vendor {
+		width: 149px; background-position: -227px -0px;
+	}
+
+ul#itda-setup-tab li div.space-news  {
+		width: 222px; background-position: -0px -0px;
+	}
+	
+ul#itda-setup-tab-manufacturer li div.space-manufacturer {
+		width: 141px; background-position: -381px -0px;
+	}
+
+ul#itda-setup-tab-competitor li div.space-competitor {
+		width: 139px; background-position: -527px -0px;
+	}
+
+ul#itda-setup-tab-vendor li a.news:hover, ul#itda-setup-tab-vendor li a.news:focus,
+ul#itda-setup-tab-manufacturer li a.news:hover, ul#itda-setup-tab-manufacturer li a.news:focus,
+ul#itda-setup-tab-competitor li a.news:hover, ul#itda-setup-tab-competitor li a.news:focus
+ {
+		background-image: url(/images/itd/setup/tab_news_on.jpg);	
+		background-position: 0px -0px;
+		background-repeat: no-repeat;
+	}
+	
+ul#itda-setup-tab li a.vendor:hover, ul#itda-setup-tab li a.vendor:focus,
+ul#itda-setup-tab-manufacturer li a.vendor:hover, ul#itda-setup-tab-manufacturer li a.vendor:focus,
+ul#itda-setup-tab-competitor li a.vendor:hover, ul#itda-setup-tab-competitor li a.vendor:focus
+ {
+		background-image: url(/images/itd/setup/tab_vendor_on.jpg);	
+		background-position: 0px 0px;
+		background-repeat: no-repeat;
+	}
+	
+ul#itda-setup-tab li a.manufacturer:hover, ul#itda-setup-tab li a.manufacturer:focus,
+ul#itda-setup-tab-vendor li a.manufacturer:hover, ul#itda-setup-tab-vendor li a.manufacturer:focus,
+ul#itda-setup-tab-competitor li a.manufacturer:hover, ul#itda-setup-tab-competitor li a.manufacturer:focus
+ {
+		background-image: url(/images/itd/setup/tab_manuf_on.jpg);	
+		background-position: 0px -0px;
+	}
+	
+ul#itda-setup-tab li a.competitor:hover, ul#itda-setup-tab li a.competitor:focus, 
+ul#itda-setup-tab-vendor li a.competitor:hover, ul#itda-setup-tab-vendor li a.competitor:focus,
+ul#itda-setup-tab-manufacturer li a.competitor:hover, ul#itda-setup-tab-manufacturer li a.competitor:focus {
+			background-image: url(/images/itd/setup/tab_comp_on.jpg);	
+		background-position: 0px -0px;
+	}
+	
+/***********************************************************/
+a.acct-link-default:link, a.acct-link-default:visited, a.acct-link-default:hover
+{color:#000;font-weight:600;text-decoration:none;line-height:250%;font-size:11px}
+
+a.acct-link-active:link, a.acct-link-active:visited, a.acct-link-active:hover
+{color:#0076a3;font-weight:600;text-decoration:underline;line-height:250%;font-size:11px}
+html body div.body div#canvas div#line1.line div#item2.item div.sap-content p{padding: 35px 18px !important}
+
+.acct-content{margin: 46px 0px 0px 20px;with:100%;height:525px;overflow:hidden}
+.acct-content h2{margin:2px 0px 0px 2px}
+.acct-content hr, .acct-content div.hr{margin:10px 0px}
+.acct-content div.hr.office{border-top:1px solid #B69A2F}
+.acct-content.static{margin: 46px 0px 0px 20px;height:auto}
+.acct-content.static td.name{padding: 2px 0 2px 25px; height:auto}
+.acct-content.static td.name div.address{margin: 4px 0 0 0}
+div#item4.item div.acct-content table.table tbody tr td{font-size:9.5px;padding:0}
+div#item4.item div.acct-content table.table tbody tr td.hr{padding:0 0 8px 0;border-top:1px solid #B69A2F}
+div#item4.item div.acct-content table.content tbody tr td{padding:0}
+form#addZipCodeForm table.acct-content td, form#delZipCodeForm table.acct-content td{padding:0}
+form#addZipCodeForm table.acct-content input.text{width:120px;margin:5px 0 0;padding:5px}
+form#addZipCodeForm table.acct-content select, 
+form#delZipCodeForm table.acct-content select{width:100px}
+form#acctInfoForm td.value input.office{margin:10px 0 2px}
+a.officeLink{color: #9A2B17;text-decoration: underline}
+.require{color:#0076a3}
+body.myAcct .acct-content{height:497px; margin:0}
+body.myAcct .paginateButtons{padding:10px 0}
+body.myAcct .paginateButtons a{border-color:#B69A2F; margin:0 0 0 5px}
+body.myAcct .acct-content td{padding:5px 0px}
+body.myAcct .acct-content table tr td.bottom-separator{border-bottom:1px solid #B69A2F}
+body.myAcct .acct-content .list table{padding:0}
+body.myAcct div#tabs.ui-tabs ul.ui-tabs-nav li a{width: 123px;text-align:center}
+div#doc div div.body div#canvas div#line1.line div#item4.item div.sap-content,
+body.myAcct div.body div#canvas div#line1.line div#item4.item div.sap-content{text-align:left}
+body.myAcct div#tabs.ui-tabs ul.ui-tabs-nav li.last-tab{margin-right:0px}
+body.myAcct div.body div#tabs div#tabs-1, 
+body.myAcct div.body div#tabs div#tabs-2, 
+body.myAcct div.body div#tabs div#tabs-3, 
+body.myAcct div.body div#tabs div#tabs-4
+{border: 1px solid #B69A2F; background-color:white; padding:20px 5px 5px}
+
+/*#dialog-my-acct{height:550px !important}*/
+#dialog-my-acct table.acct-content{height:auto; margin: 0px 0px}
+#dialog-my-acct td{padding: 0px 5px}
+#dialog-my-acct td input{margin: 2px 0px 10px 0px}
+#dialog-my-acct h2{margin:0px 0px 30px}
+#dialog-my-acct td.value input{width:99%; font-size:13px}
+#dialog-my-acct div.errors li{line-height:120%}
+#dialog-my-acct div.errors{background: none repeat scroll 0 0 #FFFFFF}
+.acct-visa {
+width: 46px; height: 30px; cursor:pointer;
+background-image: url(/images/itd/myAccount/account.png);	
+background-position: -338px -74px;border:0px;}
+.acct-master {
+width: 46px; height: 30px; cursor:pointer;
+background-image: url(/images/itd/myAccount/account.png);	
+background-position: -292px -74px;border:0px;}
+.acct-discover {
+width: 46px; height: 30px; cursor:pointer;
+background-image: url(/images/itd/myAccount/account.png);	
+background-position: -384px -74px;border:0px;}
+.acct-change-button {
+width: 64px; height: 19px; cursor:pointer;
+background-image: url(/images/itd/myAccount/account.png);	
+background-position: -114px -112px;border:0px;}
+
+.acct-update-button {
+width: 64px;  height: 19px; cursor:pointer;
+background-image: url(/images/itd/myAccount/account.png);	
+background-position: -178px -112px;
+border:0px;
+}
+
+
+.my-acct {
+background-image: url(/images/itd/myAccount/account.png);	
+border:0px;
+}
+.acct-add-news-button {
+width: 114px;  height: 19px; cursor:pointer;
+background-position: 0px -74px;
+}
+.acct-mod-zip-button {
+width: 114px;  height: 19px; cursor:pointer;
+background-position: -114px -74px;
+}
+.acct-add-comp-button {
+width: 114px;  height: 19px; cursor:pointer;
+background-position: 0px -93px;
+}
+.acct-add-manu-button {
+width: 114px;  height: 19px; cursor:pointer;
+background-position: -178px -93px;
+}
+.acct-add-vendor-button {
+width: 114px;  height: 19px; cursor:pointer;
+background-position: 0px -112px;
+}
+.acct-add-office-button {
+width: 77px; height: 19px;
+background-position: -242px -112px;
+}
+
+.acct-add-button {
+width: 64px;  height: 18px; cursor:pointer;
+background-position: -319px -112px;;
+}
+.acct-del-button {
+width: 64px;  height: 18px; cursor:pointer;
+background-position: -383px -112px;;
+}
+.acct-close-icon {
+width: 14px;  height: 14px; cursor:pointer;
+background-position: -432px -99px;;
+}
+/*
+.acct-modifyzip-button {
+width: 115px; height: 19px; cursor:pointer;
+background-image: url(/images/itd/myAccount/buttons.jpg);	
+background-position: -128px 0px;border:0px;
+}
+.acct-secure-logo {
+width: 122px; height: 19px; margin: 30px 5px 0px 0px;
+background-image: url(/images/itd/myAccount/buttons.jpg);	
+background-position: -243px 0px;border:0px;
+}
+*/
+#my-account-left-edge {
+width: 21px;
+height: 621px;
+background-image: url(/images/itd/myAccount/myAccountLeftCoverEdge.jpg);	
+background-position: 0px 0px;
+background-repeat: no-repeat;
+}
+
+#my-account-middle-binder {
+width: 100px;
+height: 621px;
+background-image: url(/images/itd/myAccount/middleBinder.jpg);	
+background-position: 0px 0px;
+background-repeat: no-repeat;
+}
+
+#my-account-right-edge {
+width: 52px;
+height: 621px;
+background-image: url(/images/itd/myAccount/myAccountRightCoverEdge.jpg);	
+background-position: 0px 0px;
+background-repeat: no-repeat;
+}
+
+#my-account-right-content {
+width: 1px;
+height: 621px;
+background-image: url(/images/itd/myAccount/rightContent_1_621.jpg);	
+background-position: 0px 0px;
+background-repeat: repeat-x;
+}
+
+#my-account-left-content {
+width: 1px;
+height: 621px;
+background-image: url(/images/itd/myAccount/leftContent_1_621.jpg);	
+background-position: 0px 0px;
+background-repeat: repeat-x;
+}
+.myAcct div.ui-dialog div#dialog-small.transition-bg h2{font-weight:900; font-size:1.3em}
+.myAcct div.ui-dialog div#dialog-small.transition-bg{font-size:0.93em}
+
+.acct-content table tr td.border-none,
+.acct-content table tr th.border-none{border:0px;background: none;color:#333333}
+
+.acct-content table thead tr th.name{padding-left:5px}
+.acct-content table thead tr th
+{background: none repeat scroll 0px 0px #a9bcca; color: white; font-size: 12px; font-weight: bold; line-height: 17px;}
+.acct-content table tr td.bottom-separator
+{border-bottom:1px solid #aaaaaa}
+.acct-content table.table tbody tr td.name{font-weight: bold;padding-left:5px}
+.acct-content table.table tbody tr td a:link,
+.acct-content table.table tbody tr td a,
+.acct-content table.table tbody tr td a:hover,
+.acct-content table.table tbody tr td a:visited
+{color: #9A2b17; text-decoration:underline;line-height: 150%;font-weight:bold}
+.acct-content table tbody tr td h1, .acct-content tbody tr td h1{font-size:24px}
+.acct-content table tbody tr td table tbody tr td div{line-height:130%}
+.acct-content div.blue {color:#0076A3;line-height:150%;font-weight:bold}
+/*****************planner************************/
+	#wrap {
+		width: 1000px;
+		margin: 0px auto;
+		}
+			
+	#advertise-events h4 {
+		font-size: 16px;
+		margin-top: 0px;
+		padding-top: 1em;
+		}
+.planner-detail-link-blue.gobtn {font-size:17px}
+span.h4{font-weight:600; font-size:16.5px; }
+div#doc div div#body > table {border-spacing:0; border-collapse:collapse; width: 1008px; margin: 8px;}
+div.body.planner div#calendar.fc div.fc-content div.fc-view div a img.news-planner-event
+{background:url(/images/itd/planner/ad_store_planner_040113.png) 0px -144px;	width:32px;	height:28px; border:0; cursor:pointer}
+div.body div#calendar.fc div.fc-content div.fc-view div a img.directmail-planner-event
+{background:url(/images/itd/planner/ad_store_planner_040113.png) -32px -141px; width:32px; height:31px; border:0; cursor:pointer}
+div.body div#calendar.fc div.fc-content div.fc-view div a img.media-planner-event
+{background:url(/images/itd/planner/ad_store_planner_040113.png) -64px -140px; width:32px; height:32px; border:0; cursor:pointer}
+div.body div#calendar.fc div.fc-content div.fc-view div a img.event-planner-event
+{background:url(/images/itd/planner/ad_store_planner_040113.png) -96px -144px; width:32px; height:28px; border:0; cursor:pointer}
+div.body div#calendar.fc div.fc-content div.fc-view div a img.miscellaneous-planner-event
+{background:url(/images/itd/planner/ad_store_planner_040113.png) -128px -149px; width:32px; height:23px; border:0; cursor:pointer}
+.planner-icon{background-image:url(/images/itd/planner/ad_store_planner_040113.png); background-repeat: no-repeat;cursor:pointer;border:0px;background-color:transparent}		
+.save-btn-orange{background-position:-64px -44px; height:19px;width:64px}
+.ok-btn-orange{background-position:-64px -63px; height:19px;width:64px}
+.undo-btn-gray{background-position:0px -82px; height:19px;width:64px}
+.no-thanks-btn{background-position:-256px 0px; height:19px;width:85px}
+.btn-select-jpg{background-position:-256px -19px; height:19px;width:85px}
+.btn-upload-pdf{background-position:-256px -38px; height:19px;width:85px}
+.clear-btn-gray{background-position:0px -101px; height:19px;width:64px}
+.new-vendor-btn-gray{background-position:-64px -101px; height:19px;width:104px}
+.add-todo-btn-gray{background-position:-64px -120px; height:19px;width:104px}
+.send-btn-red{background-position:-128px -44px; height:19px;width:64px}
+.x-icon-red{background-position:-169px -83px; height:14px;width:14px}
+.attach-icon{background-position:-216px -245px; height:19px;width:100px}
+.reports-145-22{background-position:-60px -22px; height:22px;width:144px}
+.reports-59-22{background-position:0px -22px; height:22px;width:60px}
+.generateReport{background-position:-192px -63px; height:20px;width:109px}
+.frame-left{background-position:-464px 0px;width:35px; height:509px; background-color:white}
+.frame-right{background-position:-499px 0px;width:35px; height:509px; background-color:white}
+.add-icon-green{background:url(/images/skin/database_add.png) 0px 0px;width:16px; height:16px;border:0; cursor:pointer}
+div#tabs div#tabs-4 div#miscellaneous-planner-event.advertise-event
+{background:url(/images/itd/tracker/tracker_051211.png) -623px -74px;
+	width:80px;	height:60px;border:0;}
+
+.planner-news-small-icon{background-position:0px -213px; height:35px;width:40px}
+.planner-dm-small-icon{background-position:-40px -210px; height:38px;width:38px}
+.planner-media-small-icon{background-position:-78px -205px; height:43px;width:42px}
+.planner-event-small-icon{background-position:-120px -211px; height:37px;width:46px}
+.planner-misc-small-icon{background-position:-166px -214px; height:34px;width:50px}
+
+
+#news-planner-event{background:url(/images/itd/planner/ad_store_planner_040113.png) -2px -292px; width:75px; height:60px; border:0; cursor:pointer}
+#directmail-planner-event{background:url(/images/itd/planner/ad_store_planner_040113.png) -79px -292px; width:75px; height:60px; border:0; cursor:pointer}
+#media-planner-event{background:url(/images/itd/planner/ad_store_planner_040113.png) -150px -292px; width:70px; height:60px; border:0; cursor:pointer} 
+#event-planner-event{background:url(/images/itd/planner/ad_store_planner_040113.png) -225px -292px; width:80px; height:60px; border:0; cursor:pointer}
+#miscellaneous-planner-event{background:url(/images/itd/planner/ad_store_planner_040113.png) -312px -292px; width:80px; height:60px; border:0; cursor:pointer}
+	
+	#advertise-events {
+		border: 5px solid; 
+		border-color: #F7F4EF;		
+		width: 725px;
+		height: 80px;
+		background: #F7F4EF;
+		text-align: left;
+		}
+
+	#calendar {
+		width: 705px;
+		background-color: #F7F4EF;
+		border: 15px;
+		border-bottom: 0px; 
+		border-style: solid;
+		border-color: #F7F4EF;
+		}
+	#planner-detail {
+		float: right;
+		width: 250px;
+		background-color: #F7F4EF; 
+		height: 769px;
+		}
+
+div#planner-detail div#scrollpanel div.planner-detail-content div.plannerCalSelect {background-color: #FFFFF3}
+.planner-detail-date {
+		background-color: #B69A2F;
+		text-color: #ffffff;
+		padding: 10px 5px 5px 10px; /* t r b l */ 
+		}
+.planner-hr{background-color: #B69A2F;height:1px}
+
+div.planner-detail-date h3
+{color: #ffffff; font-size: 16px; font-family: arial; font-weight: bold;}
+
+.planner-detail-date-entries{border-right:10px}
+.planner-detail-title {
+		text-color: #ffffff;
+		padding: 10px 5px 2px 10px;  
+		font-size: 15px; font-family: arial; font-weight: bold;
+}
+
+.planner-detail-info {
+		text-color: #ffffff;
+		padding: 0px 0px 7px 10px;  
+		font-size: 13px; font-family: arial; line-height: 1.3;
+}
+
+
+.ui-icon-prev {
+	background-image: url(/images/itd/planner/prev.jpg); 
+}
+.ui-icon-next {
+	background-image: url(/images/itd/planner/next.jpg); 
+}
+.itda-prev {
+	background-image: url(/images/itd/planner/prev.jpg); 
+}
+
+.planner-detail-link-gray {
+    color: #555555;
+	font-size: 11px; font-family: arial; line-height: 118%;
+}
+.planner-detail-link-gray:hover{text-decoration:underline;}
+.planner-detail-link-red {
+    color: #9A2b17;
+	font-size: 11px; font-family: arial; line-height: 118%;
+}
+.planner-detail-link-red:hover{text-decoration:underline;cursor:pointer}
+.planner-detail-link-green {
+    color: #58852A;
+	font-size: 11px; font-family: arial; line-height: 118%;
+}
+.planner-detail-link-green:hover{text-decoration:underline;cursor:pointer}
+.planner-detail-link-blue {
+    color: #0076A3;
+	font-size: 11px; font-family: arial; line-height: 118%;
+}
+.planner-detail-link-blue:hover{text-decoration:underline;cursor:pointer}
+.planner-detail-link-orange {
+    color: #F6931E;
+	font-size: 11px; font-family: arial; line-height: 118%;
+}
+.planner-detail-link-orange:hover{text-decoration:underline;cursor:pointer}
+.planner-detail-link-black:hover{text-decoration:underline;cursor:pointercolor: #0076A3;}
+.planner-detail-link-black {
+    color: #DDDDDD;
+	font-size: 12px; font-family: arial; line-height: 2;
+}
+/*planner detail *************************/
+div#planner-detail-content table tbody tr td div div#summary table tbody tr td,
+div.plannerContent div#todos-accordion.ui-accordion-content form#todos-form div#todosList table tbody tr td{padding:3px 5px 0px 0px; text-align:left; overflow:hidden}
+div#accordion.ui-accordion-disabled{filter:alpha(opacity=95);opacity:0.95;}
+.plannerContent  div#selectAdFrom-accordion.ui-accordion-content form div div#container{margin: 0px}
+#tracker-page div.ui-dialog, #planner-page div.ui-dialog{letter-spacing:-1px}
+.dialog-close-btn{background-image:url(/images/itd/tracker/tracker_051211.png); background-position:-254px -132px; height:13px;width:13px; margin:0px; background:; border:0px; cursor:pointer}
+.transition-bg{background-image: url(/images/itd/planner/trans-bg-long.png); padding: 5px 5px 25px 20px; border:1px solid #B69A2F;min-height:20px; background-repeat:repeat-x}
+.transition-bg-short{background-image: url(/images/itd/planner/trans-bg-short.png); padding: 5px 5px 25px 20px; min-height:20px; background-repeat:repeat-x}
+.leather-bg{background-image: url(/images/itd/planner/itda-planner-leather.jpg); background-repeat: repeat-y  repeat-x;width:1024px}
+
+#pdtl-calendar .ui-widget-content{
+	border:0;background:none;color:#025A82;
+}
+
+#pdtl-calendar div.fc-content div.fc-view table tbody tr td div.fc-day-content{display:none;padding:0}
+#pdtl-calendar.fc div.fc-content div.fc-view{width:90%;padding:0px 10px 0px 5px}
+#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td
+{
+	border:0;margin:12px;background:none;background-color:rgb(242,252,254);color:#B69A2F;height:'';font:Verdana,Arial,sans-serif;font-size:0.765em;font-weight:bold;text-align:right;
+}
+
+#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td div.fc-day-number
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td div.fc-day-number
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td div.fc-day-number
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td div.fc-day-number
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td div.fc-day-number
+,#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td div.fc-day-number 
+{border:0px; font-size:1.05em;font-weight:bold;text-align:right; float: right; width:70%;padding: 2px 0px;}
+#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td.fc-other-month div.fc-day-number,
+#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td.fc-other-month div.fc-day-number,
+#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td.fc-other-month div.fc-day-number
+{display:none}
+#pdtl-calendar.fc table.fc-header tbody,
+#pdtl-calendar.fc div.fc-content div.fc-view table thead tr th
+{border:0;background:none;background-color:rgb(242,252,254);color:#B69A2F;height:'';font:Verdana,Arial,sans-serif;font-size:0.7em;font-weight:900;text-align:right;width:14%}
+
+#pdtl-calendar.fc table.fc-header tbody tr td.fc-header-right table tbody tr td div.fc-button-next 
+,#pdtl-calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td h2.fc-header-title
+,#pdtl-calendar.fc table.fc-header tbody tr td.fc-header-left table tbody tr td div.fc-button-prev{
+border:0;background:none;background-color:rgb(242,252,254);color:#025A82;height:'';text-transform:uppercase;font-size:1.0em;font-weight:900;margin:0;letter-spacing:3px;}
+
+#pdtl-calendar.fc table.fc-header tbody tr td.fc-header-right{padding-bottom:3px} 
+#pdtl-calendar.fc table.fc-header tbody tr td.fc-header-left{padding-bottom:3px}
+
+/*#pdtl-calendar.fc table.fc-header tbody tr td.fc-header-right {
+float:right;padding-bottom:3px;width:;
+} 
+#pdtl-calendar.fc table.fc-header tbody tr td.fc-header-left {
+float:left;padding-bottom:3px;width:;
+} 
+#pdtl-calendar.fc table.fc-header tbody tr td.next {
+float:right;padding-bottom:3px;
+} 
+#pdtl-calendar.fc table.fc-header tbody tr td.prev {
+float:left;padding-bottom:3px;
+} 
+*/
+
+#pdtl-calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td
+,#pdtl-calendar.fc table.fc-header tbody tr td
+ {vertical-align:middle;text-align:center;}
+/*****************************************/
+
+#deadline-calendar .ui-widget-content,
+#repeatad-calendar .ui-widget-content,
+div.sm-event-cal .ui-widget-content{border:0;background:none;color:#025A82;}
+div#wrap table.page-bg tbody tr td div.sm-event-cal div.ui-datepicker-inline table.ui-datepicker-calendar tbody tr td{background-color:#F2FCFE}
+#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td
+
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td
+{
+	border:0;margin:12px;background:none;background-color:#F7F4EF;color:#B69A2F;height:'';font:Verdana,Arial,sans-serif;font-size:0.765em;font-weight:900;text-align:center;
+}
+div#repeatad-calendar.sm-event-cal div.ui-datepicker-inline{padding: 5px 0 0 5px;  width: 190px;}
+div#deadline-calendar.sm-event-cal div.ui-datepicker-inline{padding: 5px 0 0 12px;  width: 190px;}
+div#accordion.ui-corner-all div#repeatad-accordion.ui-accordion-content,
+div#accordion.ui-corner-all div#deadline-accordion.ui-accordion-content{overflow:hidden}
+
+#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td div.fc-day-number
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td div.fc-day-number
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td div.fc-day-number
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td div.fc-day-number
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td div.fc-day-number
+,#deadline-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td div.fc-day-number 
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td div.fc-day-number
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td div.fc-day-number
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td div.fc-day-number
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td div.fc-day-number
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td div.fc-day-number
+,div.sm-event-cal.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td div.fc-day-number 
+
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td div.fc-day-number
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td div.fc-day-number
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td div.fc-day-number
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td div.fc-day-number
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td div.fc-day-number
+,#repeatad-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td div.fc-day-number {
+		border:0px; font-size:1.05em;font-weight:900;text-align:center;     float: right;
+    width:100%;padding: 3px;	
+}
+
+#deadline-calendar.fc div.fc-content div.fc-view table thead tr th ,
+div.sm-event-cal.fc div.fc-content div.fc-view table thead tr th,
+#repeatad-calendar.fc div.fc-content div.fc-view table thead tr th
+ {
+		border:0px;background:none;background-color:#F7F4EF;color:#B69A2F;height:'';font:Verdana,Arial,sans-serif;font-size:0.7em;font-weight:900;text-align:center;
+}
+
+#deadline-calendar.fc table.fc-header tbody tr td.fc-header-right table tbody tr td div.fc-button-next 
+,#deadline-calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td h2.fc-header-title
+,#deadline-calendar.fc table.fc-header tbody tr td.fc-header-left table tbody tr td div.fc-button-prev
+,#repeatad-calendar.fc table.fc-header tbody tr td.fc-header-right table tbody tr td div.fc-button-next 
+,#repeatad-calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td h2.fc-header-title
+,#repeatad-calendar.fc table.fc-header tbody tr td.fc-header-left table tbody tr td div.fc-button-prev 
+,div.sm-event-cal.fc table.fc-header tbody tr td.fc-header-right table tbody tr td div.fc-button-next 
+,div.sm-event-cal.fc table.fc-header tbody tr td.fc-header-center table tbody tr td h2.fc-header-title
+,div.sm-event-cal.fc table.fc-header tbody tr td.fc-header-left table tbody tr td div.fc-button-prev 
+{
+		border:0;background:none;background-color:#F7F4EF;color:#025A82;height:'';text-transform:uppercase;font-size:1.0em;font-weight:900;margin:0;letter-spacing:3px;
+}
+#deadline-calendar.fc table.fc-header tbody tr td.fc-header-right
+,#repeatad-calendar.fc table.fc-header tbody tr td.fc-header-right
+,div.sm-event-cal.fc table.fc-header tbody tr td.fc-header-right
+ {
+	float:right;padding-bottom:3px;
+} 
+#deadline-calendar.fc table.fc-header tbody tr td.fc-header-left
+,#repeatad-calendar.fc table.fc-header tbody tr td.fc-header-left,
+,div.sm-event-cal.fc table.fc-header tbody tr td.fc-header-left {
+	float:left;padding-bottom:3px;
+} 
+
+
+#deadline-calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td
+,#deadline-calendar.fc table.fc-header tbody tr td
+,#repeatad-calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td
+,#repeatad-calendar.fc table.fc-header tbody tr td
+,div.sm-event-cal.fc table.fc-header tbody tr td.fc-header-center table tbody tr td
+,div.sm-event-cal.fc table.fc-header tbody tr td
+ {
+	vertical-align:middle;text-align:center;
+}
+/***************************/
+div#static-tab table tbody tr td {text-align:center;vertical-align:text-bottom;padding:0px; }
+div#current-working-days select{margin:5px 5px 0px;width:260px}
+
+#accordion h3 {margin:5px 5px 0px 5px;border:0px;height:36px}
+#accordion h3.ui-state-default,#accordion h3.ui-state-hover
+{background-image: url(/images/itd/planner/accordion-button.jpg)}
+
+#accordion div{margin:0px 5px 0px 5px; background:white;y:-10px;top:0px;}
+#accordion{border-bottom:5px;border-style:solid;border-color:rgb(105,96,91);background-color:rgb(105,96,91);}
+#accordion h3.ui-accordion-header span.ui-icon{display:none;}
+#accordion h3.ui-accordion-header a {padding: 0.7em 0.5em 0.5em 5.5em;} 
+div#date h2 {margin: 0px 0px;}
+
+
+.ui-datepicker-calendar  thead tr th{
+	background-color:transparent;color:#B69A2F;
+}
+
+#repeatad-calendar .ui-widget-content .ui-datepicker-header,
+div.sm-event-cal .ui-widget-content .ui-datepicker-header,
+#deadline-calendar .ui-widget-content .ui-datepicker-header{
+	border:0;background:none;color:#025A82;
+}
+.ui-datepicker-calendar  tbody tr td .ui-state-default{
+	background:none;color:#B69A2F;border:0;font:Verdana,Arial,sans-serif;font-size:0.92em;font-weight:900;text-align:center;
+}
+/*#expense-calendar .ui-datepicker-calendar  tbody tr td .ui-state-default{*/
+div.sm-event-cal.hasDatepicker div.ui-datepicker table.ui-datepicker-calendar  tbody tr td .ui-state-default{
+		background:none;color:#111111;border:0;font:Verdana,Arial,sans-serif;font-size:0.92em;font-weight:normal;text-align:center;
+}
+
+#deadline-calendar .ui-datepicker .ui-datepicker-header,
+#repeatad-calendar .ui-datepicker .ui-datepicker-header,
+div.sm-event-cal .ui-datepicker .ui-datepicker-header
+{border:0; background:none;}
+
+#repeatad-calendar div.ui-datepicker-inline div.ui-datepicker-header div.ui-datepicker-title span.ui-datepicker-month,
+div.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header div.ui-datepicker-title span.ui-datepicker-month,
+#deadline-calendar div.ui-datepicker-inline div.ui-datepicker-header div.ui-datepicker-title span.ui-datepicker-month 
+{text-transform:uppercase;font-size:1.0em;font-weight:900;margin:0;letter-spacing:3px; }
+#repeatad-calendar  div.ui-datepicker-inline table.ui-datepicker-calendar tbody tr td.planner-state-active a
+{background:url(/images/itd/tracker/tracker_051211.png) -249px -163px; /*width:14px;	height:14px;*/ border:0; line-height:168%}
+
+#repeatad-calendar div table.ui-datepicker-calendar tbody tr td a,
+div.sm-event-cal div table.ui-datepicker-calendar tbody tr td a,
+#deadline-calendar div table.ui-datepicker-calendar tbody tr td a
+{width:80%}
+
+
+#deadline-calendar  div.ui-datepicker-inline table.ui-datepicker-calendar tbody tr td a.ui-state-active
+{background:url(/images/itd/planner/ad_store_planner_040113.png) -187px -101px; /*width:14px;	height:14px;*/ border:0}
+/*{border:1px #025A82 solid;background-color:#F8DDCC;filter:alpha(opacity=95);opacity:0.95;}*/
+/*div#expense-calendar.sm-event-cal  div.ui-datepicker-inline table.ui-datepicker-calendar tbody tr td.planner-state-active a*/
+div.sm-event-cal.hasDatepicker div.ui-datepicker.ui-datepicker-inline  table.ui-datepicker-calendar tbody tr td a,
+div.sm-event-cal.hasDatepicker div.ui-datepicker.ui-datepicker-inline  table.ui-datepicker-calendar tbody tr td.planner-state-active a,
+div.sm-event-cal.hasDatepicker div.ui-datepicker.ui-datepicker-inline  table.ui-datepicker-calendar tbody tr td.planner-state-active a.ui-state-active
+{border:0; padding: 0px; line-height:140%;vertical-align:bottom;width:25px;	height:17px; font-size:9.5px;
+color:black; background-color:transparent;opacity:;filter:;}
+div.sm-event-cal.hasDatepicker div.ui-datepicker.ui-datepicker-inline  table.ui-datepicker-calendar tbody tr td.planner-state-active a
+/*{border:0px;background-color:rgb(211,234,242);filter:alpha(opacity=95);opacity:0.95;}*/
+{background:url(/images/itd/tracker/tracker_051211.png) -247px -164px;}
+div.sm-event-cal.hasDatepicker div.ui-datepicker.ui-datepicker-inline  table.ui-datepicker-calendar tbody tr td.planner-state-active a.ui-state-active
+{background:url(/images/itd/tracker/tracker_051211.png) -247px -145px;}
+/*{border:0px;background-color:white;filter:alpha(opacity=95);opacity:0.95;}*/
+#repeatad-calendar div table.ui-datepicker-calendar tbody tr td a.ui-state-default, 
+#deadline-calendar div table.ui-datepicker-calendar tbody tr td a.ui-state-default 
+{padding:0px; margin:0px;border:1px #FFFFFF solid;}
+/*
+div.sm-event-cal div table.ui-datepicker-calendar tbody tr td a.ui-state-default 
+{padding:0px; margin:5px 0 0;border:1px #F2FCFE solid;}
+*/
+div#deadline-calendar.sm-event-cal div table.ui-datepicker-calendar tbody tr td
+{width:17px; height:17px; padding:0 2px 0 0 }
+div.sm-event-cal div table.ui-datepicker-calendar tbody tr td {width:17px; height:17px; padding:0px; }
+#repeatad-calendar div table.ui-datepicker-calendar,
+div.sm-event-cal div table.ui-datepicker-calendar,
+#deadline-calendar div table.ui-datepicker-calendar
+{width:100%;position:relative}
+#repeatad-calendar div table.ui-datepicker-calendar thead tr th,
+#deadline-calendar div table.ui-datepicker-calendar thead tr th
+{padding:3px 0 0; line-height:14px;}
+div.sm-event-cal div table.ui-datepicker-calendar thead tr th
+{padding:3px 0 ; line-height:14px;}
+#deadline-calendar div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-prev span.ui-icon,
+#deadline-calendar div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-next span.ui-icon,
+#repeatad-calendar div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-prev span.ui-icon,
+#repeatad-calendar div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-next span.ui-icon, 
+div.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-prev span.ui-icon,
+div.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-next span.ui-icon 
+{background:none;display:none;}	
+#deadline-calendar div.ui-datepicker-inline div.ui-datepicker-header div.ui-datepicker-title,
+#repeatad-calendar div.ui-datepicker-inline div.ui-datepicker-header div.ui-datepicker-title,
+div.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header div.ui-datepicker-title
+{line-height:1em;margin:auto}
+#accordion div.ui-accordion-content div#buttons,
+#repeatad-calendar.hasDatepicker div.ui-datepicker-inline,
+div.sm-event-cal.hasDatepicker div.ui-datepicker-inline,
+#repeatad-accordion div#deadline-calendar.hasDatepicker,
+#deadline-calendar.hasDatepicker div.ui-datepicker-inline,
+#deadline-accordion div#deadline-calendar.hasDatepicker {margin:0px}
+
+#deadline-calendar.hasDatepicker div.ui-datepicker-inline,
+#repeatad-calendar.hasDatepicker div.ui-datepicker-inline{position:relative;left:10px}
+
+/*div#expense-calendar.sm-event-cal div.ui-datepicker-inline,div#sale-calendar.sm-event-cal div.ui-datepicker-inline*/
+
+div.sm-event-cal.hasDatepicker div.ui-datepicker.ui-datepicker-inline
+{ padding: 10px 35px; width: 180px;} /*{margin:8px 25px}*/
+#size-accordion.ui-accordion-content,#color-accordion.ui-accordion-content,#offices-accordion.ui-accordion-content,#vendors-accordion.ui-accordion-content,#quantity-accordion.ui-accordion-content,#zipcodes-accordion.ui-accordion-content,
+#selectAdFrom-accordion.ui-accordion-content,#notes-accordion.ui-accordion-content,#todos-accordion.ui-accordion-content,#send-accordion.ui-accordion-content,#newmarketing-accordion.ui-accordion-content 
+{padding:0.5em 1em}
+#repeatad-accordion.ui-accordion-content,
+#deadline-accordion.ui-accordion-content
+{padding:0.5em 1em}
+
+#accordion div.ui-accordion-content form {padding-left:20px}
+
+#accordion #zipcodes-accordion.ui-accordion-content form,#accordion #notes-accordion.ui-accordion-content form{padding-left:0px}
+#accordion textarea{width:227px; height:80px;padding:1px;font-size:11px;} 
+.textarea{width:230px; height:100px;padding:1px;font-size:10px;overflow:hidden}
+/***************************************************/
+div.tracker-detail-content table tbody tr td table tbody tr td, 
+div.planner-detail-content table tbody tr td table tbody tr td {border:0px; margin:0px; padding:0px;border-style:none;}
+#border-left{
+	background-image:url(/images/itd/planner/left-side-border.jpg);
+	/*background-position: 0px 0px;background-repeat: no-repeat;width:18px;height:510px;padding:0px;text-align:right;*/
+	border: 1px solid red;
+}
+
+#summary {
+	line-height: 140%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+.gray{color: #777777}
+
+#summary hr{
+ margin: 5px 0px;
+}
+div#dialog-send-to-vendor.ui-dialog-content table tbody tr td div form div table tbody tr td{padding:2px}
+span#ui-dialog-title-gPlannerDiag.ui-dialog-title {float:none}
+div.ui-dialog div#gPlannerDiag.ui-dialog-content {padding:0px}
+#planner-page div div.body div#gPlannerDiag table#search{width:1000px !important}
+#planner-page div div.body div#gPlannerDiag table#search{margin:0px !important}
+#planner-page div div.body div#gPlannerDiag  div#filters div#top{display:none}
+html body div.ui-dialog{padding:0px}
+html body div.ui-dialog div#gPlannerDiag.ui-dialog-content table tbody tr td#search-results-td div#search-result table#resultBody tbody tr td div.result-container div.result-image-container img{cursor:pointer}
+.off-num-text{color:#0076a3}
+/*********************************************************************/
+.archive-left-col{border:1px solid #B69A2F;background-color: #F7F4EF}
+.archive-left-col.my-upload{border-right:0px; padding:55px 5px 55px 20px}
+#left-cont, #filters{width: 225px; height: 100%; border: 1px solid #B69A2F; background-color: white; max-height: 812px}
+#left-cont{padding: 20px; width: 185px !important}
+#left-cont div{line-height:135%; font-size:13px; color:black}
+#left-cont div a{color:#0076A3;text-decoration:underline; font-size:11px;margin-top:5px}
+#left-cont div b{font-size:11px}
+#left-cont div h3{letter-spacing:0px}
+#filters div {overflow:hidden}
+#filters {overflow-x:hidden; overflow-y:auto}
+#filters div.filter-element {padding: 5px 5px 0px 5px}
+#filters #search table tr td {padding: 1px}
+#filters div p {padding-bottom: 3px}
+#filters div.hr{background-image: url(/images/itd/archiver/hr-bar.jpg)}
+#filters h1{font-size:22px; margin:0px 0px 10px 0px}
+#filters h2{font-size:13.5px; font-weight:bold}
+.archive-right-col{border: 1px solid #B69A2F;background-color: #F7F4EF; padding:0px}
+.archive-right-col.my-upload{border-left:0px; padding:55px 20px}
+#search-result{width: 697px; margin: 15px 30px 10px}
+#right-cont{width: 697px; margin: 15px 25px 10px}
+.review-hr{height:1px; width:677px; background-image:url(/images/itd/archiver/hr-bar-205.jpg); margin:10px 0px}
+
+#reviews{line-height:135%}
+#reviews h3{line-height:150%}
+#helpful, #helpful input{color:#888888;background-color:transparent;font-size:12px;margin:0px}
+#helpful a {color: #0076A3;;text-decoration:underline}
+#reviews div.revText{line-height:140%;font-size: 12px; margin:10px 0px}
+#reviews div#comments{margin-left:20px;overflow:hidden;line-height:140%;font-size:12px}
+#views.filter-element table tbody tr.view-filter-ui td{padding:6px 5px}
+#views.filter-element table tbody tr.view-filter-ui td.td-wolsp{padding-left:4px}
+
+.archive-search-link-blue {color: #0076A3; font-size: 12px; font-family: arial; line-height: 128%; text-decoration:underline;float:right;margin:8px 5px 0px}
+.archive-search-link-orange {color: rgb(208,95,27); font-size: 11px; font-family: arial; line-height: 128%; text-decoration:underline;position:relative;bottom:3px;}
+.archive-accord.ui-accordion div.ui-accordion-content{background:none; background-image: none; border:0px; padding: 2px 15px}
+
+.archive-accord h3.ui-state-default, .archive-accord h3.ui-state-hover,
+.archive-accord h3.ui-state-active,  .archive-accord h3.ui-widget-header 
+{background:none; background-image: none; border:0px; padding: 2px 5px}
+
+div.archive-accord h3.ui-accordion-header a {padding:5px 10px}
+#filters div.archive-accord h3.ui-accordion-header a {padding:5px 10px}
+
+#archive-accord-timeofyear input {margin-left:0px}
+.resultsheader{display:none}
+.searchCriteriaHeader tr td, .resultsheader tr td{font-size:11.5px;color:#111;line-height:125%}
+select#gotopage, select#gotopage-bottom{padding:0px; margin:0px 0px; font-size:12px; width:50px}
+#search-result td {padding: 5px 0px}
+#search-result table.resultsheader tr td {padding: 10px 0px}
+#search-result table.resultsheader tbody tr td input {font: 11px verdana,arial,helvetica,sans-serif;margin:0; padding:0}
+#search-result h1.result, .result-detail h1.title{margin: 0px 0px 8px 0px}
+#views.filter-element tr.view-filter-ui td span{color:#111111;font-weight:bold;font-size:12px;cursor:pointer}
+#refineSearch.filter-element input{border:none; margin-right:2px}
+#refineSearch.filter-element span{color:#111111;font-weight:bold;font-size:12px;line-height:180% }
+.archive-accord div span{line-height:180%; padding-left:10px;vertical-align:top}
+a.archive-link-default:link, a.archive-link-default:visited
+{color:#ccc;font-weight:normal;}
+a.archive-link-default:hover
+{color:blue;font-weight:normal;}
+div.back-to-search-icon, .result-text-container table.center tbody tr td div:hover,
+{color:black; filter:alpha(opacity=100); opacity:1}
+#search-results-td table.result-detail td {padding:0px; vertical-align:middle;}
+a.archive-link-active:link, a.archive-link-active:visited, a.archive-link-active:hover
+{color:#0076A3;font-weight:normal;}
+
+div.archive-accord h3 span.ui-icon.ui-icon-triangle-1-e
+{	background-image:url(/images/itd/archiver/as_archive_040113.png); 
+	background-position:-163px -90px; 
+	background-repeat: no-repeat;
+	height:15px;width:8px;left:0px; margin-top:-6px}
+div.archive-accord h3 span.ui-icon.ui-icon-triangle-1-s
+{	background-image:url(/images/itd/archiver/as_archive_040113.png); 
+	background-position:-171px -90px; 
+	background-repeat: no-repeat;
+	height:16px;width:10px;left:0px; margin-top:-6px}
+.ui-icon-triangle-1-e-test
+{	background-image:url(/images/itd/archiver/itda_archive_icons_041511.png); 
+	background-position:-180px -16px; 
+	background-repeat: no-repeat;
+	height:16px;width:11px;left:0px}
+
+.pdf-icon{background-position:-151px -186px; height:110px;width:105px}
+.itda-archive-icon{background-image:url(/images/itd/archiver/as_archive_040113.png); background-repeat: no-repeat;cursor:pointer;border:0px}	
+.archive-search-button{background-position:-66px -32px; height:19px;width:25px;margin:5px 0px;float:right}
+.right-arrow-btn{background-position:-152px -32px; height:19px;width:61px;float:right}
+.left-arrow-btn{background-position:-2px -174px; height:19px;width:61px}
+.select-btn{background-position:-63px -174px; height:19px;width:64px;float:right}
+.file-cabinet-icon{background-position:-2px -32px; height:16px;width:16px}	
+.my-uploads-icon{background-position:-34px -32px; height:16px;width:16px}	
+.favorite-pink-icon{background-position:-118px -1px; height:15px;width:16px}
+.prev-run-black-icon{background-position:-34px -16px; height:16px;width:16px}	
+.prev-run-orange-icon{background-position:-134px -16px; height:16px;width:16px}	
+.schedule-black-icon{background-position:-50px -16px; height:16px;width:16px}	
+.schedule-blue-icon{background-position:-134px 0px; height:16px;width:17px}	
+.rating-black-icon{background-position:-67px -16px; height:16px;width:17px}
+.favorite-black-icon{background-position:-18px -17px; height:16px;width:16px}
+.download-black-icon{background-position:-102px -16px; height:16px;width:16px}
+.download-green-icon{background-position:-118px -16px; height:16px;width:16px; margin-right:7px}
+.rating-white-icon{background-position:-212px 0px; height:16px;width:16px}	
+.rating-orange-icon{background-position:-177px 0px; height:16px;width:16px}	
+.rating-half-icon{background-position:-195px 0px; height:16px;width:16px}	
+.comment-icon{background-position:-197px -92px; height:17px;width:17px}
+.add-comment-btn{background-position:-2px -51px; height:19px;width:118px}
+.upload-pdf-btn{background-position:-2px -193px; height:19px;width:103px}
+.c2-on-icon {background-position:-20px -90px;height:18px;width:18px;}	
+.c4-on-icon{background-position:-38px -90px; height:18px;width:18px}	
+.c1-on-icon{background-position:-2px -90px; height:18px;width:18px}
+.download-pdf-icon{background-position:-234px -24px; height:12px;width:12px}
+.download-jpg-icon{background-position:-234px -36px; height:12px;width:12px}
+.add-favorite-icon{background-position:-234px 0px; height:12px;width:12px}
+.add-planner-icon{background-position:-234px -12px; height:12px;width:12px}
+.print-pdf-icon{background-position:-234px -48px; height:12px;width:12px}
+.send-vendor-icon{background-position:-234px -60px; height:12px;width:12px}
+.back-to-search-icon{background-position:-181px -93px; height:16px;width:16px}
+.detail-gray-icon{background-position:-86px -16px; height:16px;width:16px}
+.tips-56-22{background-position:-145px -109px; height:22px;width:62px}
+.tips-long{background-position:-2px -109px; height:22px;width:144px}
+.close-blue-icon{background-position:-182px -20px; height:12px;width:12px}	
+.close-btn{background-position:-120px -51px; height:19px;width:64px}	
+
+.itda-off{color:#666666; filter:alpha(opacity=40); opacity:0.40}
+.itda-on{color:black; filter:alpha(opacity=100); opacity:1}
+.result-banner{padding:2px 8px; color:white;veritcal-align:bottom;position: relative; top: -321px; height: 16px;}
+.most-downloaded{background-color:#BDCA7A}
+.favorites{background-color:#F29A90; display:none}
+.highest-rated{background-color:#D9D6CD; padding-left:63px}
+.previously-run{background-color:#EFBC64}
+.scheduled{background-color:#9Ec4d1}
+/*.all{display:none}portfolio*/
+#resultBody tbody tr td div.result-container div.result-banner div#banner-text {height:16px; line-height:185%; text-align:left; veritcal-align:text-bottom; font-weight:bold}
+#resultBody tbody tr td div.result-container div.result-text-container table.center tbody tr td{padding:3px 0px 4px 0px}
+#resultBody tbody tr td div.result-container div.result-text-container table.center tbody tr td div{margin:0px 	10px;}
+.noresult{display:none;}
+
+div#ad-desc{font-weight:900; font-size:15px; line-height:16px; padding:30px 0px 5px 0px}
+div#ad-type{font-weight:bold; font-size:12.5px; line-height:1.4}
+div#ad-color, div#ad-size, div#ad-rating-text, div#ad-file, div#ad-rating-title
+{font-size:12px; line-height:1.5; font-weight:500; color:black}
+tr.result-detail-link td {font-size:11.5px; font-weight:500;  text-align:top; line-height:16px; color:inherit; text-decoration:inherit}
+tr.result-detail-link {padding:2px; text-align:top}
+tr.result-detail-link:hover, tr.result-detail-link:hover{color:#0076A3; text-decoration:underline; cursor:pointer}
+tr.result-detail-link {color:black}
+
+div#ad-rating-link a:link, div#ad-rating-link  a:hover, div#ad-rating-link  a:visited
+{color: #0076A3; text-decoration:underline;}
+
+
+.result-container{width:207px; border: 1px solid #B69A2F; background-color:white}
+.result-image{height:315px;}
+.result-left{float:left}
+.result-right{float:right}
+.result-image-container{width:192px; height:229px; margin:8px; overflow:hidden; position:relative;overflow:hidden}
+
+.result-text-container{width:198px; height:65px; margin:5px;font-size:9.5px}
+.align-bottom{vertical-align:bottom}
+
+/* archive */
+tr.result-detail-link td{padding: 2px 2px}
+div.ui-dialog {background: none/*url(/images/itd/archiver/dialog-bg.jpg) 1px 1px*/; background-color:rgb(237,248,254)}
+div.ui-dialog div.ui-dialog-titlebar{	background:none; border:0px; padding:0px}
+div.ui-dialog div.ui-dialog-titlebar span#ui-dialog-title-dialog.ui-dialog-title,
+div.ui-dialog div.ui-dialog-titlebar span#ui-dialog-title-dialog-cal.ui-dialog-title
+{padding: 0px; margin: 0px; font-weight:normal; font-size:8px}
+div.ui-dialog div.ui-dialog-titlebar a.ui-dialog-titlebar-close {width:14px; height:14px; padding:0px; top:12px; right:2px}
+div.ui-dialog div.ui-dialog-titlebar a.ui-dialog-titlebar-close span.ui-icon.ui-icon-closethick,
+div.ui-dialog div.ui-dialog-titlebar a.ui-dialog-titlebar-close span.ui-icon.ui-icon-closethick.ui-state-hover  
+{background-image:url(/images/itd/tracker/tracker_051211.png); background-position:-254px -132px; height:13px;width:13px; margin:0px; background:; border:0px}
+html body div.ui-dialog div.ui-dialog-titlebar a.ui-dialog-titlebar-close.ui-state-hover{background-image:none; border:0px; background-color:transparent}
+div.ui-dialog div#dialog.transition-bg span.ui-icon.ui-icon-circle-check {
+background-image:url(/images/itd/archiver/as_archive_040113.png); background-position:-118px 0px; height:15px;width:16px}
+div.ui-dialog div#dialog-cal.ui-dialog,
+div.ui-dialog div#dialog-cal.ui-dialog-content,
+div.ui-dialog div#dialog.ui-dialog-content{overflow:hidden}
+#fc-calendar.fc div.fc-content{background:none;border:0}
+#fc-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td,
+#fc-calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td h2.fc-header-title,
+#fc-calendar.fc table.fc-header tbody tr td table tbody tr td, 
+#fc-calendar.fc table.fc-header tbody tr td
+{margin: 0px; padding: 0px; text-align:center; font-size:10.5px;border:0;background:none;background-color:none;color:black}
+
+#fc-calendar.fc table { border-spacing:0; border-collapse:collapse}
+#fc-calendar.fc table.fc-header tbody tr td.fc-header-left table tbody tr td,
+#fc-calendar.fc table.fc-header tbody tr td.fc-header-left{float:left; text-align:left}
+
+#fc-calendar.fc table.fc-header tbody tr td.fc-header-right table tbody tr td,
+#fc-calendar.fc table.fc-header tbody tr td.fc-header-right{float:right; text-align:right}
+#fc-calendar.fc table.fc-header tbody tr td.fc-header-center table,
+#fc-calendar.fc table.fc-header{width: 100%; margin-left:auto; margin-right:auto; text-align:center}
+#fc-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-content
+{display:none}
+#fc-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td.fc-other-month div.fc-day-number,
+#fc-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td.fc-other-month div.fc-day-number,
+#fc-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td.fc-other-month div.fc-day-number
+{display:none}
+#fc-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td{height:14px !important}
+#fc-calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td h2.fc-header-title
+{text-transform:uppercase; font-size:10.5px;font-weight:900; color:#4D9DBE}
+#fc-calendar.fc div.fc-content div.fc-view table thead tr th#cal-day-header
+{border:0;padding:0;background:none;background-color:none;color:#B69A2F;font-size:10.5px;font-weight:900;text-align:center;line-height:14px;width:14%; !important}
+/*
+#fc-calendar.fc table.fc-header tbody tr td table tbody tr td div.fc-button-prev a span.ui-icon.ui-icon-circle-triangle-w
+{background-position:-582px -21px; height:15px;width:15px;background-image:url(/images/itd/planner/buttons.jpg); background-repeat: no-repeat;cursor:pointer;border:0px}
+#fc-calendar.fc table.fc-header tbody tr td table tbody tr td div.fc-button-next a span.ui-icon.ui-icon-circle-triangle-e
+{background-position:-599px -21px; height:15px;width:15px;background-image:url(/images/itd/planner/buttons.jpg); background-repeat: no-repeat;cursor:pointer;border:0px}
+*/
+#fc-calendar.fc table.fc-header tbody tr td table tbody tr td div.fc-button-next,
+#fc-calendar.fc table.fc-header tbody tr td table tbody tr td div.fc-button-next:hover,
+#fc-calendar.fc table.fc-header tbody tr td table tbody tr td div.fc-button-prev{border:0;background:none}
+
+/*********TRACKER****************/
+body#tracker-page div#ui-datepicker-div.ui-datepicker div.ui-datepicker-header a.ui-datepicker-next,
+body#tracker-page div#ui-datepicker-div.ui-datepicker div.ui-datepicker-header a.ui-datepicker-prev,
+body#tracker-page div#ui-datepicker-div.ui-datepicker div.ui-datepicker-header {background-color:#EEF7F6; background-image:none}
+/*#wrap.plannerContent table tbody tr td div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td,
+div#tabs.ui-tabs div table tbody tr td div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td{width:5%}*/
+#wrap.plannerContent table tbody tr td div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td h2.fc-header-title,
+div#tabs.ui-tabs div table tbody tr td div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td h2.fc-header-title {font-size:23px; text-align:center}
+#wrap.plannerContent table tbody tr td div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td div,
+div#tabs.ui-tabs div table tbody tr td div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td div{background-image:none;background-color:transparent;border:0px}
+div#tabs.ui-tabs {padding: 0px; background-image:none;background-color:transparent; border:0px; float:left}
+div#tabs.ui-tabs div#tabs-1, div#tabs.ui-tabs div#tabs-2, 
+div#tabs.ui-tabs div#tabs-3, div#tabs.ui-tabs div#tabs-4 {padding: 0px;}
+div#tabs.ui-tabs ul.ui-tabs-nav {background-image:none;background-color:transparent;border:0px}
+div#tabs.ui-tabs ul.ui-tabs-nav li {margin-right:7px}
+div#tabs.ui-tabs ul.ui-tabs-nav li.ui-state-default{background-color:#EEF7F6; background-image:none; border-color:#B69A2F; color:red}
+div#tabs.ui-tabs ul.ui-tabs-nav li.ui-state-default a{color:#898989}
+div#tabs.ui-tabs ul.ui-tabs-nav li.ui-state-active{background-color:white; background-image:none; border-color:#B69A2F}
+div#tabs.ui-tabs ul.ui-tabs-nav li.ui-state-active a{color:black}
+div#tabs.ui-tabs ul.ui-tabs-nav li a {font-size:15px; width:138px}
+
+table.tabs-2-numbers td.col1, table.tabs-2-numbers td.col3{width:90px}
+table.tabs-2-numbers td.col2{width:267px}
+table.tabs-1-numbers td.col1{width:348px}
+table.tabs-1-numbers td.col2{width:99px}
+
+div#tabs #accordion h3.ui-accordion-header a {padding: 0.7em 0.5em 0.5em 5.5em; font-size:1.1em} 
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td div.fc-day-number,
+
+div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td div.fc-day-number
+,div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td div.fc-day-number
+,div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td div.fc-day-number
+,div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td div.fc-day-number
+,div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td div.fc-day-number
+,div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td div.fc-day-number 
+{border:0px; font-size:1.55em;font-weight:bold;text-align:right; float: right; width:70%;padding: 2px 0px;}
+div.ui-dialog div#dialog-cal.ui-dialog-content div div#fc-calendar.fc div.fc-content div.fc-view table thead tr th,
+div.ui-dialog div#dialog-cal.ui-dialog-content div div#fc-calendar.fc table.fc-header tbody,
+div#planner-detail-content table tbody tr td div#pdtl-calendar.fc div.fc-content div.fc-view table thead tr th,
+div#planner-detail-content table tbody tr td #pdtl-calendar.fc table.fc-header tbody,
+div#tabs #pdtl-calendar.fc table.fc-header tbody,
+div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table thead tr th
+{border:0;background:none;background-color:rgb(242,252,254);color:#B69A2F;height:'';font:Verdana,Arial,sans-serif;font-size:1.0em;font-weight:900;text-align:right;width:14%}
+body div.ui-dialog div#dialog-cal.ui-dialog-content div div#fc-calendar.fc div.fc-content div.fc-view table thead tr th,
+body div.ui-dialog div#dialog-cal.ui-dialog-content div div#fc-calendar.fc table.fc-header tbody
+{background-color:white;text-align:center}
+
+div#tabs.ui-tabs div div table tbody tr td div table tbody tr td input 
+{font-size:1.25em; position:relative; bottom:-3px; width:98%; border:0px; background-color:transparent;filter:alpha(opacity=95);opacity:0.95;}
+div#tabs.ui-tabs div div table tbody tr td div table tbody tr td input.readonly, 
+div#tabs.ui-tabs div div table tbody tr td div table tbody tr td input.amount
+{font-weight:bold; width:94%; text-align:right; font-size:1.1em}
+div#tabs.ui-tabs div div table tbody tr td div table tbody tr td input.integer 
+{font-weight:bold; width:94%; text-align:left; font-size:1.1em}
+/*
+div#tabs.ui-tabs div#tabs-1.ui-tabs-panel div table tbody tr td div table tbody tr td.center div.ui-widget-content.ui-widget {background:none; border: 0px}
+*/
+.tabs-1-numbers tr.odd, .tabs-2-numbers tr.odd {background-color:white}
+.tabs-1-numbers tr.even, .tabs-2-numbers tr.even{background-color:rgb(243,251,254)}
+.tabs-1-numbers tr.odd.itda-ui-focus,.tabs-2-numbers tr.odd.itda-ui-focus,
+.tabs-1-numbers tr.even.itda-ui-focus,.tabs-2-numbers tr.even.itda-ui-focus
+{background-color:rgb(248,245,230)} 
+html body div div.body div#wrap div#tabs.page-bg
+{
+background-image: url(/images/itd/myAccount/pagebg_20_500.jpg);	
+background-position: 0px 0px;
+background-repeat: repeat;
+padding: 10px;
+}
+
+.page-bg {
+background-image: url(/images/itd/myAccount/pagebg_20_500.jpg);	
+background-position: 0px 0px;
+background-repeat: repeat;
+padding: 10px;
+}
+
+#wrap table.page-bg tbody tr td,
+#wrap div#tabs div.ui-tabs-panel div table tbody tr td
+{padding:0px 0px;background-color:transparent}
+#wrap div#tabs.page-bg div#tabs-4.ui-tabs-panel table#comp-cal tbody tr td div#advertise-events table tbody tr td{padding:0px 0px;background-color:#F7F4EF}
+/*#wrap div#tabs div#tabs-1 div table tbody tr td div#expense-detail-content-selectedAd div.hr img,
+#wrap div#tabs div#tabs-2 div table tbody tr td div#sale-detail-content-selectedAd div.hr img
+{width:170px; margin-right:10px}
+*/
+div#tabs table.tabs-3-numbers{margin-left:30px;background-color: #CCCCCC}
+div#tabs div#tabs-3 div table tbody tr td div table.tabs-3-numbers tbody tr td.description
+{text-align:right;veritcal-align:bottom;padding-right:25px;background-color:rgb(242,247,251);font-size:13px;padding-bottom:5px}
+div#tabs div#tabs-3 div table tbody tr td div table.tabs-3-numbers tbody tr td.result-summary
+{text-align:right;veritcal-align:bottom;padding-right:25px;background-color:rgb(243,245,231);font-size:13px;padding-bottom:5px}
+div#tabs div#tabs-3 div table tbody tr td div table.tabs-3-numbers tbody tr td.amt{;padding-bottom:0px}
+div#tabs div#tabs-3 div table tbody tr td div table.tabs-3-numbers tbody tr td.description div
+{height:12px}
+#tabs div#tabs-3 div table tbody tr td div div.review{font-size:13px;margin-left:20px;vertical-align:top;line-height:150%;color:black;font-weight:550}
+
+#tabs div.ui-tabs-panel div table tbody tr td div div.hr {width:170px; overflow:hidden; margin:10px 0}
+/*html body div div.body div#wrap div#tabs.page-bg div#tabs-2.ui-tabs-panel table#comp-cal tbody tr td,
+html body div div.body div#wrap div#tabs.page-bg div#tabs-2.ui-tabs-panel table#comp-cal tbody tr td div#calendar.fc div.fc-content div.fc-view table thead tr th.cal-day-header.fc-state-default,
+html body div div.body div#wrap div#tabs.page-bg div#tabs-2.ui-tabs-panel table#comp-cal tbody tr td div#advertise-events,
+html body div div.body div#wrap div#tabs.page-bg div#tabs-2.ui-tabs-panel table#comp-cal tbody tr td div#planner-detail{background-color:white}*/
+#wrap table.page-bg tbody tr td div.sm-event-cal
+{width: 250px; min-height:150px; border: 1px solid #B69A2F; background-color: rgb(242, 252, 254);}
+#wrap div#tabs div#tabs-4 table#comp-cal tbody tr td#event-cal{padding:5px 0 5px 5px}
+
+#wrap div#tabs div#tabs-4 table#comp-cal tbody tr td#event-cal div#calendar.fc{padding:9px; border-width:1px 1px 0; border-color: #B69A2F}
+#wrap div#tabs div#tabs-4 table#comp-cal tbody tr td#event-cal div#advertise-events{padding:9px; border-width:0px 1px 1px 1px; border-color: #B69A2F;width:705px}
+#wrap div#tabs div#tabs-4 table#comp-cal tbody tr td div#planner-detail{width:235px;border: 1px solid #B69A2F;height:776px}
+
+#wrap table.tabs-3-numbers tbody tr.even td div.itda-icon.tracker-check-icon.center {margin-top: 10px}
+#wrap div#tabs div#tabs-3 div table tbody tr td div div.review input.itda-icon:focus,
+#wrap div#tabs div#tabs-3 div table tbody tr td div div.review input.itda-icon {margin:0px; padding:0px; border:0; background-color:transparent}
+
+.tracker-icon{background-image:url(/images/itd/tracker/tracker_051211.png); background-repeat: no-repeat;cursor:pointer;border:0px;background-color:transparent}
+.tracker-1-2-star-icon{background-position:-273px -74px; height:15px;width:17px}
+.tracker-0-star-icon{background-position:-290px -74px; height:15px;width:17px}
+.tracker-1-star-icon{background-position:-256px -74px; height:15px;width:17px}
+#tracker-page #tabs-3 #errors ul li{line-height:120%}
+#tabs-3.ui-tabs-panel div table tbody tr td div div.review input.tracker-0-star-icon,
+#tabs-3.ui-tabs-panel div table tbody tr td div div.review input.tracker-1-star-icon,
+#tabs-3.ui-tabs-panel div table tbody tr td div div.review input.tracker-1-2-star-icon
+{position:relative;top:3px}
+
+.tracker-calendar-link {
+	width:16px;
+	height:19px;
+	background:url(/images/itd/tracker/tracker_051211.png) -256px -89px;
+	border:0px
+	}
+.tracker-print-icon{background-position:-272px -89px; height:17px;width:16px}	
+.tracker-detail-view-icon{background-position:-288px -89px; height:17px;width:17px}	
+.publish-btn{background-position:0px -74px; height:19px;width:64px}
+.tracker-cancel-gray-btn{background-position:-64px -74px; height:19px;width:64px}
+.done-icon{background-position:-128px -74px; height:19px;width:64px}
+.save-btn{background-position:-192px -74px; height:19px;width:64px}
+.tracker-print-result-icon{background-position:0px -93px; height:19px;width:64px}
+.tracker-delete-gray-btn{background-position:-64px -93px; height:19px;width:64px}
+.tracker-cancel-orange-btn{background-position:-192px -93px; height:19px;width:64px}
+.calculate-icon{background-position:0px -112px; height:19px;width:80px}
+.new-competitor-icon{background-position:-80px -112px; height:19px;width:104px}
+.new-newspaper-icon{background-position:-184px -112px; height:19px;width:104px}
+.tracker-reports{background-position:-3px -131px; height:22px;width:57px}
+.tracker-tips{background-position:-3px -153px; height:22px;width:57px}
+.tracker-check-icon{background-position:-240px -134px; height:12px;width:12px}
+div#tabs-3 table.tabs-3-numbers tbody tr.even td div.tracker-check-icon{margin-top:10px}
+.close-dg-icon{background-position:-255px -134px; height:12px;width:12px}
+.tracker-news-small-icon{background-position:-494px -142px; height:30px;width:40px}
+.tracker-dm-small-icon{background-position:-534px -139px; height:33px;width:38px}
+.tracker-media-small-icon{background-position:-572px -133px; height:41px;width:43px}
+.tracker-event-small-icon{background-position:-615px -140px; height:32px;width:40px}
+.tracker-misc-small-icon{background-position:-659px -142px; height:30px;width:47px}
+.small-prev-icon{background-position: -210px -151px; background-repeat: no-repeat; border: 0 none; height: 14px; width: 10px;}
+.small-next-icon{background-position: -220px -151px;  background-repeat: no-repeat; border: 0 none; height: 14px; width: 11px}
+.left-side-border-35-509{background-position: -708px 0px;  background-repeat: no-repeat; border: 0 none; height: 509px; width: 35px; cursor:default}
+.right-side-border-35-509{background-position: -742px 0px;  background-repeat: no-repeat; border: 0 none; height: 509px; width: 35px; cursor:default}
+html body div.ui-dialog div#dialog-publish-review.ui-dialog-content,
+html body div.ui-dialog div#dialog-review-policy.ui-dialog-content{font-size:13px}
+html body div.ui-dialog div#dialog-publish-review.ui-dialog-content h1,
+html body div.ui-dialog div#dialog-review-policy.ui-dialog-content h1 {margin:0 0 15px}
+#fc-calendar.fc table.fc-header tbody tr td table tbody tr td div.fc-button-prev a span.ui-icon.ui-icon-circle-triangle-w,
+div#accordion.ui-corner-all div#repeatad-accordion.ui-accordion-content div#repeatad-calendar.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-prev,
+div#deadline-accordion.ui-accordion-content div#deadline-calendar.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-prev,
+table#tabs-1-detail-content.page-bg tbody tr td#detail-content div#expense-calendar.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-prev,
+table#tabs-1-detail-content.page-bg tbody tr td#detail-content div#expense-calendar.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-prev.ui-state-hover.ui-datepicker-prev-hover
+{   background-color: transparent; background-image: url("/images/itd/tracker/tracker_051211.png");
+    background-position: -210px -150px; background-repeat: no-repeat; border: 0 none; height: 15px; width: 10px; top:2px; left:2px; cursor:pointer}
+#fc-calendar.fc table.fc-header tbody tr td table tbody tr td div.fc-button-next a span.ui-icon.ui-icon-circle-triangle-e,
+div#accordion.ui-corner-all div#repeatad-accordion.ui-accordion-content div#repeatad-calendar.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-next,
+div#deadline-accordion.ui-accordion-content div#deadline-calendar.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-next,
+table#tabs-1-detail-content.page-bg tbody tr td#detail-content div#expense-calendar.sm-event-cal div.ui-datepicker-inline div.ui-datepicker-header a.ui-datepicker-next    
+{   background-color: transparent;  background-image: url("/images/itd/tracker/tracker_051211.png");
+    background-position: -220px -150px;  background-repeat: no-repeat; border: 0 none; height: 15px; width: 11px; top:2px; left:168px; cursor:pointer}
+#wrap.plannerContent table tbody tr td div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td div.fc-button-prev a img,
+div#tabs-4 table#comp-cal tbody tr td#event-cal div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td div.fc-button-prev a img
+{background-image: url("/images/itd/tracker/tracker_051211.png"); background-position:-204px -131px; background-repeat:no-repeat; 
+  border: 0 none; height: 20px; width: 16px; cursor:pointer; float:right;}
+#wrap.plannerContent table tbody tr td div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td div.fc-button-next a img,
+div#tabs-4 table#comp-cal tbody tr td#event-cal div#calendar.fc table.fc-header tbody tr td.fc-header-center table tbody tr td div.fc-button-next a img
+{background-image: url("/images/itd/tracker/tracker_051211.png"); float:left; cursor:pointer; 
+  background-position: -220px -131px;  background-repeat: no-repeat; border: 0 none; height: 20px; width: 16px}
+
+div#tabs div#tabs-4 div#news-planner-event.advertise-event
+{background:url(/images/itd/tracker/tracker_051211.png) -310px -74px;
+	width:75px;	height:60px; border:0;}
+div#tabs div#tabs-4 div#directmail-planner-event.advertise-event
+{background:url(/images/itd/tracker/tracker_051211.png) -387px -74px;
+	width:75px;	height:60px;border:0;}
+div#tabs div#tabs-4 div#media-planner-event.advertise-event
+{background:url(/images/itd/tracker/tracker_051211.png) -460px -74px;
+	width:75px;	height:60px;border:0;}
+div#tabs div#tabs-4 div#event-planner-event.advertise-event
+{background:url(/images/itd/tracker/tracker_051211.png) -533px -74px;
+	width:85px;	height:60px;border:0;}
+div#tabs div#tabs-4 div#miscellaneous-planner-event.advertise-event
+{background:url(/images/itd/tracker/tracker_051211.png) -623px -74px;
+	width:80px;	height:60px;border:0;}
+
+div.body.tracker div#wrap div#tabs div#tabs-4 table#comp-cal.tabs-4-content tbody tr td#event-cal div#calendar.fc div.fc-content div.fc-view div a img.news-planner-event
+{background:url(/images/itd/tracker/tracker_051211.png) -546px -180px;
+	width:32px;	height:29px; border:0}
+{background:url(/images/itd/tracker/tracker_051211.png) -546px -180px;
+	width:32px;	height:29px; border:0}
+div.body.tracker div#wrap div#tabs div#tabs-4 table#comp-cal.tabs-4-content tbody tr td#event-cal div#calendar.fc div.fc-content div.fc-view div a img.directmail-planner-event
+{background:url(/images/itd/tracker/tracker_051211.png) -578px -177px;
+	width:32px;	height:29px; border:0}
+div.body.tracker div#wrap div#tabs div#tabs-4 table#comp-cal.tabs-4-content tbody tr td#event-cal div#calendar.fc div.fc-content div.fc-view div a img.media-planner-event
+{background:url(/images/itd/tracker/tracker_051211.png) -610px -177px;
+	width:32px;	height:31px; border:0}
+div.body.tracker div#wrap div#tabs div#tabs-4 table#comp-cal.tabs-4-content tbody tr td#event-cal div#calendar.fc div.fc-content div.fc-view div a img.event-planner-event
+{background:url(/images/itd/tracker/tracker_051211.png) -642px -180px;
+	width:32px;	height:29px; border:0}
+div.body.tracker div#wrap div#tabs div#tabs-4 table#comp-cal.tabs-4-content tbody tr td#event-cal div#calendar.fc div.fc-content div.fc-view div a img.miscellaneous-planner-event
+{background:url(/images/itd/tracker/tracker_051211.png) -674px -186px;
+	width:32px;	height:23px; border:0}
+#tracker-detail-content table tbody tr td div#pdtl-calendar.fc div.fc-content div.fc-view div a img,
+div#planner-detail-content table tbody tr td div#pdtl-calendar.fc div.fc-content div.fc-view div a img{display:none}
+#tabs div#tabs-4 div.tabs-4-content table tbody tr td table tbody tr td div#date h2 {font-size:25px}
+#tabs div#tabs-4 div.tabs-4-content table tbody tr td table tbody tr td div#date h1 {font-size:35px}
+div.body.planner div.plannerContent table tbody tr td div div div#planner-detail-content table tbody tr td div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number,
+#tabs div#tabs-4 div.tabs-4-content table tbody tr td div div div#tracker-detail-content table tbody tr td div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number {    
+	border: 0 none;
+    color: #111111;
+    font-size: 10px;
+    font-weight: normal;
+    text-align: center;}
+    
+html body div.ui-dialog div.ui-dialog-buttonpane{background-color:transparent; background-image:none; border:0px}
+html body div.ui-dialog div.ui-dialog-buttonpane span{padding:0px;line-height:1}
+.default-tracker-msg, .default-planner-msg{margin:160px 0px 0px 20px; line-height:105%; font-size:17px; color:#0076A3}
+
+/*track detail cal*/
+div#wrap div#tabs.page-bg div#tabs-4.ui-tabs-panel div.tabs-4-content table tbody tr td div div div#tracker-detail-content table tbody tr td div#pdtl-calendar.itda-fc div.fc-content div.fc-view 
+/*cal body header and date*/{padding:0; width:100%}
+div#planner-detail-content table tbody tr td div#pdtl-calendar.fc div.fc-content div.fc-view table thead tr th,
+div#tabs #pdtl-calendar.fc table.fc-header tbody, div#tabs #pdtl-calendar.fc.itda-fc div.fc-content div.fc-view table thead tr th
+{text-align: center}
+
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td div.fc-day-number,
+div#planner-detail-content div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td div.fc-day-number,
+div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week0 td div.fc-day-number,
+div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week1 td div.fc-day-number, 
+div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week2 td div.fc-day-number,
+div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week3 td div.fc-day-number, 
+div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week4 td div.fc-day-number,
+div#tabs #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr.fc-week5 td div.fc-day-number 
+{font-size: 9.5px; font-weight: normal;margin-left: auto; margin-right: auto; float:; padding: 2px 1px 4px 1px; width:; height:; !important}
+#tracker-detail-content #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number.itda-sm-cal-event,
+#tabs div#tabs-4 div.tabs-4-content table tbody tr td div div div#tracker-detail-content table tbody tr td div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number.itda-sm-cal-event
+{background:url(/images/itd/tracker/tracker_051211.png) -249px -163px; /*width:14px;	height:14px;*/ border:0}
+div#dialog-cal.ui-dialog-content div div#fc-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number.ui-active
+{background:url(/images/itd/planner/ad_store_planner_040113.png) -188px -101px;}
+div#dialog-cal.ui-dialog-content div div#fc-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number
+{    border: 0;
+    cursor: pointer;
+    font-size: 9px;
+    height: 17px;
+    margin-left: 9px;
+    margin-right: 3px;
+    padding-right: 0;
+    padding-top: 1px;
+    text-align: center;
+    width: 17px}
+#tracker-detail-content #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number.ui-active
+#tabs div#tabs-4 div.tabs-4-content table tbody tr td div div div#tracker-detail-content table tbody tr td div#pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number.ui-active
+{background:url(/images/itd/tracker/tracker_051211.png) -249px -145px; /*width:14px;	height:14px;*/ border:0}
+#planner-detail-content #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number.itda-sm-cal-event
+{background:url(/images/itd/planner/ad_store_planner_040113.png) -168px -101px; /*width:14px;	height:14px;*/ border:0}
+#planner-detail-content #pdtl-calendar.fc div.fc-content div.fc-view table tbody.cal-content-number tr td div.fc-day-number.ui-active
+{background:url(/images/itd/tracker/tracker_051211.png) -249px -145px; /*width:14px;	height:14px;*/ border:0}
+html body div div.body div#wrap div#tabs.page-bg div#tabs-4.ui-tabs-panel div.tabs-4-content table tbody tr td div div div#tracker-detail-content table tbody tr td div#pdtl-calendar.itda-fc table.fc-header tbody tr td.fc-header-left a img.tracker-icon{margin-left:5px !important}
+html body div div.body div#wrap div#tabs.page-bg div#tabs-4.ui-tabs-panel div.tabs-4-content table tbody tr td div div div#tracker-detail-content table tbody tr td div#pdtl-calendar.itda-fc table.fc-header tbody tr td.fc-header-right a img.tracker-icon{padding-right:0px !important}
+/*datepicker*/
+div#tabs.page-bg div.ui-tabs-panel div table tbody tr td div h1
+{margin: 0.3em 0em}
+#footer a, #footer p {font-size:11px;margin:7px 0;font-weight:normal;color: #666666;}
+#footer p a.gold{color: #B69A2F}
+div.fc-content div.fc-view table tbody.cal-content-number tr td.fc-other-month{filter:alpha(opacity=40); opacity:0.40}
+html.busy, html.busy * {cursor: wait !important;} 
+/***Reports***/
+.mainBody{width:1024px;background-image: url(/images/itd/planner/itda-planner-leather-long.jpg); background-repeat: repeat-x repeat-y}
+.mainBodyContent{margin:0 10px; background-image: url("/images/itd/myAccount/pagebg_20_500.jpg");
+    background-position: 0 0;background-repeat: repeat;}
+.reportLeftCol div.filter-element.quickLink{position:relative;left:-11px;width:51px;height:22px}
+.reportLeftCol div.archive-accord div.ui-accordion-content span{padding-left:0}
+.reportLeftCol div.archive-accord div.ui-accordion-content input.dateinput{width:85px}
+.reportLeftCol div.ui-accordion-content td{padding:1px;text-align:right}
+.reportLeftCol div.ui-accordion-content td.time{text-align:left}
+#reportFilters{background-color: white;border: 1px solid #B69A2F;min-height:484px;width: 195px;}
+#reportFilters div.filter-element {margin: 10px;overflow:hidden}
+.mainBodyContent tr td.reportLeftCol{padding:5px 7px 7px 10px;background:none;border:none;max-width:197px}
+.mainBodyContent tr td.reportRightCol{padding:16px 10px 5px 0px;background:none;border:none;width:790px}
+
+#reportFilters .archive-accord h3.ui-accordion-header a{font-size:0.94em;padding: 5px 5px 0px 10px}
+#reportFilters .archive-accord div.ui-accordion-content{font-size:0.94em;color:black}
+#reportFilters h1 {font-size: 22px; margin: 0 0 10px;color:black}
+
+.reportRightCol div#tabs.ui-tabs {border: 0 none;padding: 0;margin:0;width: 780px}
+
+.reportRightCol div#tabs.page-bg div.ui-tabs-panel,
+.reportRightCol .ui-tabs .ui-tabs-nav{padding:0}
+.reportRightCol div#tabs div.ui-tabs-panel table{border: 1px solid #B69A2F;width: 100%;background-color:white}
+.reportRightCol div#tabs div.ui-tabs-panel table.resultHeader{border-bottom:none;border-top:none;color:black;font-size:10.5px;display:none}
+.reportRightCol div#tabs div.ui-tabs-panel table.resultBody{border-top:none;padding-bottom:9px;min-height: 600px;}
+.reportRightCol div#tabs div.ui-tabs-panel table.resultFooter{border:none; background-color:transparent;display:none}
+.reportRightCol div#tabs div.ui-tabs-panel table.resultFooter td{padding:10px 0 5px 0}
+
+
+div#tabs.ui-tabs ul.ui-tabs-nav li a {width:118px;text-align:center}
+div#tabs.ui-tabs ul.ui-tabs-nav li a.long-tab {width:120px}
+
+.reportRightCol div.result-container{width:136px;min-height:242px;max-height:311px;font-size:9px;background-color:rgb(244,245,240)}
+.reportRightCol div.result-container div.result-image-container{width:120px;height:141px}
+.reportRightCol div.ui-tabs-panel td{padding:4px 7px}
+.reportRightCol div.ui-tabs-panel td.result-left{padding-left:15px}
+.reportRightCol div.ui-tabs-panel td.result-right{padding-right:15px}
+.reportRightCol div.ui-tabs-panel h1{font-size:22px; color:black; margin:0; padding:5px 15px;border: 1px solid #B69A2F;border-bottom:none;background-color:white}
+.hide{display:none}
+
+body#reportPage div#ui-datepicker-div.ui-datepicker div.ui-datepicker-header a.ui-datepicker-next,
+body#reportPage div#ui-datepicker-div.ui-datepicker div.ui-datepicker-header a.ui-datepicker-prev,
+body#reportPage div#ui-datepicker-div.ui-datepicker div.ui-datepicker-header {background-color:#EEF7F6; background-image:none}
+
+body table tr.last-true td{border-bottom:none}
+div span.question{float:left;cursor:pointer}
+div span.rBracket{float:right;font-size:21px;position:relative;top:-7px;color:#0076A3;font-weight:600;cursor:pointer}
+div div.answer{display:none;clear:both;padding:15px 0 0 0;font-weight:500}
+div.qa{clear:both;border:1px 0 0 0 solid #555;text-align:left}
+div.qa.odd{/*background-color:#F0F0D9*/}
+div div.goback{text-align:left;padding:15px 0}
+div div.goback span{font-weigth:400;cursor:pointer;color:#0076A3}
+/* AD Store*/
+.store-icon{background-image:url(/images/itd/store/store_071812.png); background-repeat: no-repeat;cursor:pointer;border:0px;background-color:transparent}
+.as-detail-btn{background-position:-27px -32px; height:19px;width:61px}
+.as-buy-btn{background-position:-2px -70px; height:19px;width:64px}
+.as-cart-icon{background-position:-198px -16px; height:16px;width:16px}
+.as-excl-icon{background-position:-81px -113px; height:50px;width:80px}
+.as-arrows-icon{background-position:-5px -110px; height:56px;width:73px}
+
+td.store-left-col {background-color: #FFF; padding:0 5px; border:1px solid #B69A2F}
+td.store-left-col #filters {border: 0px solid #FFF}
+td.store-left-col .tracker-calendar-link {height:16px;cursor:pointer}
+
+#processingStatus{
+             width:200px;
+                height:22px;
+                top:0px;z-index:1000;display:none;text-align:center;
+                border-radius: 5px; padding:2px;               
+                background:#FEE27C;
+                position:fixed !important; 
+                position:absolute /* fallback for IE6 */;
+            }

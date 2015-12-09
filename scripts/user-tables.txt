@@ -1,0 +1,61 @@
+mysql> select id, login, password from authentication_user;
++--------+---------------------------------+------------------------------------------+
+| id     | login                           | password                                 |
++--------+---------------------------------+------------------------------------------+
+| 100000 | itdaweb.admin                   | d0d29dbcb4e330c1255f400391c8d4a9ee7d42c8 |
+| 100001 | eportfolio.admin                | d0d29dbcb4e330c1255f400391c8d4a9ee7d42c8 |
+| 100002 | it1@ondemand1.com               | 9270782051d21bd55c9259915f6b31927a823e2f |
+| 100012 | sandraniehues@mac.com           | 9270782051d21bd55c9259915f6b31927a823e2f |
+| 100004 | jgguerra53@aol.com              | 78e0ec3533f5c125584a6cb07cae9755dec722e1 |
+| 100005 | mgillicudy@yachoo.com           | d6c4821cd9ad56661f4f6a7456c53a733158fac8 |
+| 100006 | suzieb_itda@yahoo.com           | 84e5f135c37edda2e5d188598dad46850b60d87d |
+| 100007 | osoozzq@gmail.com               | 7f7abc4e30da6bc3b47fe446a0aaaa270124abf3 |
+| 100008 | sandraniehues@cox.net           | d43e70d86eb4f38a96e9dc0d1d3f695194fd94bf |
+| 100009 | Bob@bodegabean.com              | 7ea7edcc09d708ff3bdf5082849c3e4e78f25247 |
+| 100010 | ldietter@cox.net                | 744175ec7911890148a48fb165c1f413b0e89b5d |
+| 100011 | sandra_niehues@gmail.com        | 4e7255020936e30c5d652dc0ec8896a7a623265c |
+| 100013 | niehuess                        | 9270782051d21bd55c9259915f6b31927a823e2f |
+| 100014 | margaret_mcdonald@nuear.com     | f52c2575f93be4c96509f22edee0c32a06f27c4e |
+| 100015 | dkaster@aah.net                 | bf6b6c86d2470e830325084fbce1abf64eb285ac |
+| 100016 | heritagehearing@hotmail.com     | 133af2919f3dffdd62d2b5cc1c1ddd3547e64c65 |
+| 100017 | G_sd@yahoo.com                  | 29e51282846c5a5adca039385276729f77fe35a0 |
+| 100018 | flanaganphac@live.com           | ee87e62281ee4cee394dd9b5ff17a4fab7ab84fc |
+| 100019 | trish_olson@starkey.com         | 7c28741fdcd8357a9292b90dbe46fb7a2d5456c2 |
+| 100020 | George                          | 45c41b60d4ea3427716931c31d3373fc6a08dd72 |
+| 100021 | mike@hearform.com               | 0487ffe5d142c161d2471c5ca0f0c063f13d14a5 |
+| 100022 | sandy@inthedooradvertising.com  | 9270782051d21bd55c9259915f6b31927a823e2f |
+| 100023 | john@heritagehearingcenters.com | 9d64ea93bf2aade9a7f3305c2abf8a6f502258f0 |
+| 100024 | christinacarosella@gmail.com    | d63408dcdfbb53f7e0986b1aee9e3b147fcb05eb |
+| 100025 | soozberg@hotmail.com            | 1eb798808bc76a8f990282284c08a8ada07de95e |
+| 100026 | sandy@gmail.com                 | 2225ee5bc0a9dad93cab77f5e1c23cc481f8edf4 |
+| 100027 | sandralouguerra@gmail.com       | 9270782051d21bd55c9259915f6b31927a823e2f |
+| 100028 | loringregory@juno.com           | 6c566c85b185c596deea8714ed9cc6fef18e0268 |
+| 100029 | dave@betterhearingaid.org       | 68b87ab40fd9dbbe1e9ab7b472a8997a51a463ff |
+| 100030 | jaime@purtoneusa.com            | b4db13a583bedf0c0f021063ef1961a29c624d0b |
+| 100031 | houseofhearingorem@gmail.com    | 2cb907cfb8e3e0eb66c1dbe580c79166a43af287 |
+| 100032 | hkleven4@gmail.com              | d46ed84ffc31ede010edb93ce3f01b6aaeaff762 |
+| 100033 | echarland@gnresound.com         | 64a89d36226d90328ece4bbdd8b4844177e49f0a |
+| 100034 | lragan@gnresound.com            | 40c11a873f467fb5bcf33b9d87e45ad6fbdaed35 |
+| 100035 | bromney@gnresound.com           | 5f4dbb39bd0c33ea843038e555b6b5c87794f1e0 |
+| 100036 | juliehubik@yahoo.com            | a8794f2bc756c16da48aedc540756fe8e4ea7678 |
+| 100037 | rmckinnon@gnresound.com         | dc3e5ad3f3fb88225d80fb3c6ca5baedd8e89d7c |
+| 100038 | RFILAR@GNRESOUND.COM            | 22bec3592390ec76322232ad684a16a666289649 |
+| 100039 | jworgul@att.net                 | c8d927054f53a9c505fc0c2aa4cb26ec35d03e3d |
+| 100040 | johnsmith@hotmail.com           | 3e306e347b693af6bb6971526f1939e3ffec116d |
+| 100041 | mshear@gnresound.com            | f46d3126c163480bca8d64bb954de1d3f7505132 |
+| 100042 | drjzeigleraud@gmail.com         | 84c196f0dd6656ac7f92d50151a4722c666f59ae |
+| 100043 | jimz523@verizon.net             | 33c96b7c8d17e639b0a33e39e239709a88113619 |
+| 100044 | mjohnson@gnresound.com          | 787269e63d3f64eb40f3b06ee1ad2efbebb8f466 |
+| 100045 | jgronniger                      | dd064b98b543e3c65896956ccfe2ba926fcf4b71 |
+| 100046 | gstafford@gnresound.com         | 60bdb355048856aba9750b044e0f4eca2ba236c7 |
+| 100047 | phac_medicalbilling@!yahoo.com  | 67a65f8050263e5b9babedede7d8aca67db17986 |
++--------+---------------------------------+------------------------------------------+
+47 rows in set (0.00 sec)
+
+
+update  authentication_user set password = '9270782051d21bd55c9259915f6b31927a823e2f';
+
+select id, concat(replace(email, '@', '.AT.'), '@ondemand1.com') from business where email <> 'it1@ondemand1.com';
+
+update business set email = concat(replace(email, '@', '.AT.'), '@ondemand1.com') where email <> 'it1@ondemand1.com';
+

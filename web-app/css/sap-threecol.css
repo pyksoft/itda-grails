@@ -1,0 +1,66 @@
+#canvas {
+	width:  480px;
+	margin:  0px auto;
+	overflow: auto;
+	padding: 0%;
+	background: #ccc;
+	}
+
+/*generic css for all elements*/
+img {
+	display: block; /*needed to avoid alignment with baseline of text*/
+}
+
+.line {
+	float: left;
+	width: 100%;
+	display: block;
+	position: relative; /*prevents shifting when changing viewport in IE;thanks to Alan Gresley*/
+}
+
+.item {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	left: 100%;
+}
+
+.sap-content {
+	overflow: hidden;
+}
+
+#line1 {
+	background-color: #C2DFEB;
+}
+
+#line2 {
+	background-color: #FFF2B7;
+}
+
+#left-border {
+	margin-left: -480px;
+	width: 35px;
+	height: 509px;
+	/*background-image: url(/images/itd/planner/left-side-border-35-509.jpg);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;*/
+}
+
+#center-border {
+margin-left: -455px;
+width: 420px;
+height: 509px;
+background-image: url(/images/itd/planner/center-border.jpg);	
+background-position: 0px 0px;
+background-repeat: repeat-x;
+}
+
+#right-border {
+margin-left: -35px;
+width: 35px;
+height: 509px;
+/*background-image: url(/images/itd/planner/right-side-border-35-509.jpg);	
+background-position: 0px 0px;
+background-repeat: no-repeat;*/
+}
+

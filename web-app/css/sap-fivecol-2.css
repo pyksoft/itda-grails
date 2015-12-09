@@ -1,0 +1,123 @@
+#canvas {
+	width:  992px;
+	margin:  0px auto;
+	overflow: auto;
+	padding: 0%;
+	/*background: #ccc;*/
+	}
+
+/*generic css for all elements*/
+img {
+	display: block; /*needed to avoid alignment with baseline of text*/
+}
+
+.line {
+	float: left;
+	width: 100%;
+	display: block;
+	position: relative; /*prevents shifting when changing viewport in IE;thanks to Alan Gresley*/
+}
+
+.item {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	left: 100%;
+}
+
+.sap-content {
+	overflow: hidden;
+}
+
+#line1 {
+	/*background-color: #C2DFEB;*/
+}
+
+#line2 {
+	/*background-color: #FFF2B7;*/
+}
+
+#item1 {
+	margin-left: -992px;
+	width: 21px;
+	height: 621px;
+	background-image: url(/images/itd/myAccount/myAccountLeftCoverEdge.jpg);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+.item1 {
+	margin-left: -992px;
+	width: 21px;
+	height: 621px;
+	background-image: url(/images/itd/myAccount/myAccountLeftCoverEdge.jpg);	
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+}
+
+
+#item2 {
+margin-left: -971px;
+width: 219px;
+height: 621px;
+background-image: url(/images/itd/myAccount/leftContent_20_621.jpg);	
+background-position: 0px 0px;
+background-repeat: repeat-x;
+}
+
+#item3 {
+margin-left: -752px;
+width: 70px;
+height: 621px;
+background-image: url(/images/itd/myAccount/middleBinder_70x621.jpg);	
+background-position: 0px 0px;
+background-repeat: no-repeat;
+}
+
+#item4 {
+margin-left: -682px;
+padding: 29px 10px;
+width: 642px;
+height: 571px;
+background-image: url(/images/itd/myAccount/leftContent_20_621.jpg);	
+background-position: 0px 0px;
+background-repeat: repeat-x;
+
+}
+
+#item5 {
+margin-left: -20px;
+width: 20px;
+height: 621px;
+background-image: url(/images/itd/myAccount/myAccountRightCoverEdge_20x621.jpg);	
+background-position: 0px 0px;
+background-repeat: no-repeat;
+}
+
+#item55 {
+	margin-left: -25%;
+	width: 15%;
+
+	background: #dddddd;
+}
+
+#item6 {
+	margin-left: -100%;
+	width: 15%;
+
+	background: #315C83;
+}
+
+#item7 {
+	margin-left: -80%;
+	width: 35%;
+
+	background: #ACA42E;
+}
+
+#item8 {
+	margin-left: -40%;
+	width: 35%;
+
+	background: #9F3B57;
+}

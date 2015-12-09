@@ -1,0 +1,386 @@
+html * {
+    margin: 0;
+    /*padding: 0; SELECT NOT DISPLAYED CORRECTLY IN FIREFOX */
+}
+
+.red_link_button {
+    background: transparent;
+    border: 0px;
+    color: #9A2b17;
+    font-size: 11px;
+    text-decoration:underline;
+    font-weight: bold;
+    padding: 0px;
+    cursor:pointer
+}
+
+
+
+/* GENERAL */
+
+.spinner {
+    padding: 5px;
+    position: absolute;
+    right: 200px;
+    top: 100px;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font: 15px verdana, arial, helvetica, sans-serif;
+ 	margin: 0px;
+ 	width: 1024px;
+	margin:auto; 	
+	text-align:center;
+	border: 1px;
+	border-color: #475659;
+	border-style: solid;
+}
+/*
+a:link, a:visited, a:hover {
+    border: 0px;
+    color: #9A2b17;
+    font-size: 11px;
+    text-decoration:underline;
+    font-weight: bold;
+    padding: 0px;
+} 
+*/
+
+a:link, a:visited, a:hover {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+} 
+
+a.normal:link, a.normal:visited, a.normal:hover {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+} 
+
+
+h1 {
+    color: #333;
+    font-weight: normal;
+    font: 40 verdana, arial, helvetica, sans-serif;
+    line-height: 100%;
+    text-align: left;
+    margin: .8em 0 .3em 0;
+}
+h2 {
+    color: #333;
+    font-weight: normal;
+    font: 23 verdana, arial, helvetica, sans-serif;
+    line-height: 100%;
+    text-align: left;
+    margin: .8em 0 .3em 0;
+}
+
+p {
+    text-align: left;
+}
+
+ul {
+    padding-left: 15px;	
+}
+
+input, select, textarea {
+    border: 1px solid #ccc;
+    font: 14px verdana, arial, helvetica, sans-serif;
+    margin: 2px 0;
+    padding: 2px 4px;
+}
+select {
+   padding: 2px 2px 2px 0;
+}
+textarea {
+	width: 250px;
+	height: 150px;
+	vertical-align: top;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 1px solid #b2d1ff;
+}
+
+.body {
+ 	margin: 10px;
+ 	width: 1004px;
+	margin-left:auto;
+	margin-right:auto; 	
+ }
+
+
+/*
+.body {
+    float: left;
+    margin: 0px;
+    width: 100%;
+}
+*/
+
+/* NAVIGATION MENU */
+
+.nav {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-style: solid none solid none;	
+    margin-top: 0px;
+    padding: 7px 12px;
+}
+
+.menuButton {
+    font-size: 10px;
+    padding: 0 5px;
+}
+.menuButton a {
+    color: #333;
+    padding: 4px 6px;
+}
+.menuButton a.home {
+    background: url(../images/skin/house.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+.menuButton a.list {
+    background: url(../images/skin/database_table.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+.menuButton a.create {
+    background: url(../images/skin/database_add.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+
+/* MESSAGES AND ERRORS */
+
+.message {
+    background: #f3f8fc url(../images/skin/information.png) 8px 50% no-repeat;
+    border: 1px solid #b2d1ff;
+    color: #006dba;
+    text-align: left;
+    margin: 10px 0 5px 0;
+    padding: 5px 5px 5px 30px;
+}
+
+div.errors {
+    background: white;
+    border: 1px solid red;
+    color: #cc0000;
+    margin: 10px 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+div.errors ul {
+    list-style: none;
+    padding: 0;	
+}
+div.errors li {
+	background: url(../images/skin/exclamation.png) 8px 0% no-repeat;
+    line-height: 16px;
+    padding-left: 30px;
+    line-height: 100%;
+    text-align: left;    
+}
+
+td.errors select {
+    border: 1px solid red;
+}
+td.errors input {
+    border: 1px solid red;
+}
+td.errors textarea {
+    border: 1px solid red;
+}
+
+label {
+	color: #9A2b17;
+	font-weight: bold;
+}
+/* TABLES */
+
+
+.table {
+    border: 0px;
+    width: 100%;
+    padding: 5px;
+}
+.table td, th { 
+    font: 11px verdana, arial, helvetica, sans-serif;
+    line-height: 12px;
+    padding: 5px 0px;
+    text-align: left;
+    vertical-align: top;
+    border: 0;
+}
+tr {
+    border: 0;
+}
+td, th { 
+    font: 11px verdana, arial, helvetica, sans-serif;
+    line-height: 12px;
+    padding: 5px 6px;
+    text-align: left;
+    vertical-align: top;
+    border: 0;
+}
+th {
+    background: rgb(182, 202, 209);
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 17px;
+    padding: 2px 6px;
+}
+th a:link, th a:visited, th a:hover {
+    color: #333;
+    display: block;
+    font-size: 10px;
+    text-decoration: none;
+    width: 100%;
+}
+th.asc a, th.desc a {
+    background-position: right;
+    background-repeat: no-repeat;
+}
+th.asc a {
+    background-image: url(../images/skin/sorted_asc.gif);
+}
+th.desc a {
+    background-image: url(../images/skin/sorted_desc.gif);
+}
+
+.odd {
+    background: #f7f7f7;
+}
+.even {
+    background: #fff;
+}
+
+/* LIST */
+.list {
+border: 1px solid #ccc;
+}
+
+.list table {
+   padding: 5px; 
+   border-spacing: 0px;
+   width: 100%; 
+}
+
+.list td {
+    border-bottom: 1px solid #ddd;
+}
+.list th {
+    padding: 0px;    
+}
+
+.list th:hover, .list tr:hover {
+    background: #b2d1ff;
+}
+
+/* PAGINATION */
+
+.paginateButtons {
+    /*background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    border-top: 0;*/
+    color: #666;
+    font-size: 10px;
+    overflow: hidden;
+    padding: 10px 3px;
+}
+.paginateButtons a {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-color: #ccc #aaa #aaa #ccc;
+    color: #666;
+    margin: 0 3px;
+    padding: 2px 6px;
+}
+.paginateButtons span {
+    padding: 2px 3px;
+}
+
+/* DIALOG */
+
+.dialog table {
+    padding: 5px 0;
+}
+
+.prop {
+    padding: 5px;
+}
+.prop .name {
+    text-align: left;
+    width: 15%;
+    white-space: nowrap;
+	color: #9A2b17;
+	font-weight: bold;
+}
+.prop .value {
+    text-align: left;
+}
+
+/* ACTION BUTTONS */
+
+.buttons {
+    background: #fff url(../images/skin/shadow.jpg) bottom repeat-x;
+    border: 1px solid #ccc;
+    color: #666;
+    font-size: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.buttons input {
+    background: #fff;
+    /* border: 1px solid blue; */
+    text-align: center;
+    color: #333;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bold;
+    margin-left: 3px;
+    overflow: visible;
+    padding: 2px 6px;
+}
+
+
+.buttons input.edit {
+    background: transparent url(../images/skin/database_edit.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.save {
+   background: transparent url(../images/skin/database_save.png) 5px 50% no-repeat;
+   padding-left: 28px;
+}
+.buttons input.create {
+    background: url(../images/skin/database_add.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+
+.buttons input.checkAvailability {
+    background: url(../images/skin/database_table.png) center left no-repeat;
+    color: #333;
+    padding-left: 25px;
+}
+
+.buttons input.next {
+    background: url(../images/skin/next.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.buttons input.back {
+    background: url(../images/skin/back.png) 5px 50% no-repeat;
+    padding-left: 28px;
+}
+.regButStep1 {
+    background: url(/images/itd/reg/buttons_step_1.jpg)  no-repeat;
+    padding-left: 200px;
+    padding-bottom: 70px;
+    align: right;
+    border: 0px;
+}

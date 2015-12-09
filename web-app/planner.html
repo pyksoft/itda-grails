@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title>In the Door Advertising</title>
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/itda.css" />
+        <link rel="stylesheet" href="/css/fullcalendar-1.4.9.css" />
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<script type='text/javascript' src='/js/jquery-1.4.4.min.js'></script>
+<script type='text/javascript' src='/js/jquery-ui-1.8.6.custom.min.js'></script>
+<script type='text/javascript' src='/js/fullcalendar-1.4.9.js'></script>
+<script type='text/javascript'>
+
+	$(document).ready(function() {
+	
+	
+		//* initialize the advertise events
+		//-----------------------------------------------------------------/
+	
+		$('#advertise-events div.advertise-event').each(function() {
+		
+			// create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+			// it doesn't need to have a start or end
+			//console.log("$(this).text() = '" + $(this).text() +"'");
+			console.log( getSmallIcon($.trim($(this).attr('id'))));
+			var eventObject = {
+				title: $.trim($(this).attr('id')) // use the element's text as the event title
+				,url: 'http://localhost/planner.gsp'
+				,width: $(this).attr('width')
+				,height: $(this).attr('height')
+				,image: getSmallIcon($.trim($(this).attr('id')))
+			};
+			
+			// store the Event Object in the DOM element so we can get to it later
+			$(this).data('eventObject', eventObject);
+			
+			// make the event draggable using jQuery UI
+			$(this).draggable({
+				zIndex: 999,
+				revert: true,      // will cause the event to go back to its
+				revertDuration: 0  //  original position after the drag
+			});
+			
+		});
+	
+	
+		// initialize the calendar
+		//-----------------------------------------------------------------
+		
+		$('#calendar').fullCalendar({
+			header: {
+				left: '',
+				center: 'prev   title    next',
+				right: ''
+			},
+			editable: true,
+			droppable: true, // this allows things to be dropped onto the calendar !!!
+			drop: function(date, allDay) { // this function is called when something is dropped
+			
+				// retrieve the dropped element's stored Event Object
+				var originalEventObject = $(this).data('eventObject');
+				
+				// we need to copy it, so that multiple events don't have a reference to the same object
+				var copiedEventObject = $.extend({}, originalEventObject);
+				
+				// assign it the date that was reported
+				copiedEventObject.start = date;
+				copiedEventObject.allDay = allDay;
+				
+				// render the event on the calendar
+				// the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+				$('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+				
+				// is the "remove after drop" checkbox checked?
+				if ($('#drop-remove').is(':checked')) {
+					// if so, remove the element from the "Draggable Events" list
+					$(this).remove();
+				}
+				
+			}
+		});
+		
+		
+	});
+
+	function getSmallIcon(eventType) {
+	  var root = '/images/itd/planner/';
+	  if (eventType == 'news-planner-event' )
+		  return root + 'small-news-icon.jpg';
+	  else if (eventType == 'directmail-planner-event' )
+		  return root + 'small-directmail-icon.jpg';
+	  else if (eventType == 'media-planner-event' )
+		  return root + 'small-media-icon.jpg';
+	  else if (eventType == 'event-planner-event' )
+		  return root + 'small-event-icon.jpg';
+	  else if (eventType == 'miscellaneous-planner-event' )
+		  return root + 'small-miscellaneous-icon.jpg';
+	}
+/*
+				  	<td width="20%"><div class='advertise-event' id='' width='60' height='60'>&nbsp;</div></td>
+				  	<td width="20%"><div class='advertise-event' id='directmail-planner-event' width='60' height='60'>&nbsp;</div></td>
+				  	<td width="20%"><div class='advertise-event' id='media-planner-event' width='62' height='65'>&nbsp;</div></td>
+				  	<td width="20%"><div class='advertise-event' id='event-planner-event' width='60' height='60'>&nbsp;</div></td>
+				  	<td width="20%"><div class='advertise-event' id='miscellaneous-planner-event' width='65' height='50'>&nbsp;</div></td>
+ 
+ */
+</script>
+<style type='text/css'>
+
+	#wrap {
+		width: 1000px;
+		margin: 0 auto;
+		}
+			
+	#advertise-events h4 {
+		font-size: 16px;
+		margin-top: 0;
+		padding-top: 1em;
+		}
+		
+	.advertise-event { /* try to mimick the look of a real event */
+		float:left;
+		margin: 10px 0;
+		padding: 2px 4px;
+		background-image: url(/images/itd/1c_on.jpg);	
+		color: #fff;
+		font-size: .85em;
+		cursor: pointer;
+		}
+
+	#news-planner-event {
+	width:60px;
+	height:60px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -1px -11px;
+	border:0;
+	}
+	#directmail-planner-event {
+	width:60px;
+	height:60px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -140px -11px;
+	border:0;
+	}
+	#media-planner-event {
+	width:62px;
+	height:65px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -290px -1px;
+	border:0;
+	}
+	#event-planner-event {
+	width:62px;
+	height:60px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -435px -12px;
+	border:0;
+	}
+	#miscellaneous-planner-event {
+	width:65px;
+	height:50px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -599px -18px;
+	border:0;
+	}
+
+	.news-planner-event {
+	width:60px;
+	height:60px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -1px -11px;
+	border:0;
+	}
+	.directmail-planner-event {
+	width:60px;
+	height:60px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -140px -11px;
+	border:0;
+	}
+	.media-planner-event {
+	width:62px;
+	height:65px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -290px -1px;
+	border:0;
+	}
+	.event-planner-event {
+	width:62px;
+	height:60px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -435px -12px;
+	border:0;
+	}
+	.miscellaneous-planner-event {
+	width:65px;
+	height:50px;
+	background:url(/images/itd/planner/large-event-icons.jpg) -599px -18px;
+	border:0;
+	}
+		
+	#advertise-events p {
+		margin: 1.5em 0;
+		font-size: 11px;
+		color: #666;
+		}
+		
+	#advertise-events p input {
+		margin: 0;
+		vertical-align: middle;
+		}
+	#advertise-events {
+/*		float: left; */
+		width: 748px;
+		padding: 0 10px;
+		border: 1px solid #ccc;
+		background: #eee;
+		text-align: left;
+		}
+
+	#calendar {
+		float: left;
+		width: 740px;
+		background-color: F7F4EF; 
+		border: 15px solid; 
+		border-color: F7F4EF;
+		}
+	#planner-detail {
+		float: right;
+		width: 220px;
+		background-color: F7F4EF; 
+		border: 2px solid; 
+		border-color: F7F4EF;
+		height: 100%;
+		}
+
+</style>
+        
+     </head>
+    <body style="border:0px;" onload="document.getElementById('planner2').focus();">
+        <div>
+			<div class="logo">
+    
+</div> 
+<div>
+    
+
+ 	<ul id="itda-menu">
+		<li><a id="home" href="/" class="home">Home</a></li>
+	    <li><a id="aboutus" href="http://itda.ondemand1.com/wordpress/about.jpg" class="about">About Us</a></li>
+	    <li><a id="tour" href="http://itda.ondemand1.com/wordpress/tour1.jpg" class="tour">Tour</a></li>
+	    <li><a id="pricing" href="http://itda.ondemand1.com/wordpress/price.jpg" class="pricing">Pricing</a></li>
+	    <li><a id="signup" href="/registration" class="signup">Sign Up</a></li>
+	    <li><a id="blog" href="http://itda.ondemand1.com/wordpress/blog.jpg" class="blog">Blog</a></li>
+	</ul>
+    
+</div>
+	
+		
+       </div>
+       <div width="1024px;" style="background-image: url(/images/itd/planner/itda-planner-leather.jpg); background-repeat: repeat-x repeat-y;">
+        <div class="body" >
+			 <img style="padding:5px;" src="/images/Transparent.gif" class="center"/>
+			<div id='wrap'>
+				<div id='calendar'>
+				</div>
+				<div id='planner-detail'>
+				  <h2><br/>My Marketing Plan</h2>
+				</div>
+				<br />
+				<div id='advertise-events'>
+				  <table width='100%'><tr>
+				  	<td width="20%"><div class='advertise-event' id='news-planner-event' width='60' height='60'>&nbsp;</div></td>
+				  	<td width="20%"><div class='advertise-event' id='directmail-planner-event' width='60' height='60'>&nbsp;</div></td>
+				  	<td width="20%"><div class='advertise-event' id='media-planner-event' width='62' height='65'>&nbsp;</div></td>
+				  	<td width="20%"><div class='advertise-event' id='event-planner-event' width='60' height='60'>&nbsp;</div></td>
+				  	<td width="20%"><div class='advertise-event' id='miscellaneous-planner-event' width='65' height='50'>&nbsp;</div></td>
+				  </tr></table>
+					
+				</div>
+	
+				<div style='clear: both'></div>
+<!-- B69A2F -->
+		   </div>
+
+</div>
+	   </div>
+    </body>	
+--</html>

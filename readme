@@ -1,0 +1,40 @@
+Requirements:
+Java
+Grails
+MySQL Server 
+
+Optional Tools:
+MySQL Workbench
+SpringSource Tool Suite
+
+
+
+This project uses Grails 1.3.1.
+
+Required Grail Plugins:
+
+asynchronous-mail-0.1.3-SNAPSHOT
+authentication-2.0.1
+mail-0.9
+quartz-0.4.2
+webflow-1.3.5
+
+See DataSource.groovy for database settings. 
+
+
+This project also makes use of JQuery extensively. 
+
+INSTALLATION
+1) Install JDK 1.5+, add JAVA_HOME environment variable, 
+add bin to PATH environment variable
+2) Install Grails 1.3.x,  set GRAILS_HOME environment variable, 
+add bin to PATH environment variable
+3) Open console and cd to itda-web project directory
+4) Run grails upgrade if required (not required for grails 1.3.1)
+5) Run grails compile (if grails does not automatically installed the required plugin, install each plugin by running "grails install-plugin <plugin-name>"
+
+
+
+run-app
+* remove sessionFactory from Bootstrap
+* update Datasource port username

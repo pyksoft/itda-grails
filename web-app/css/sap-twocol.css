@@ -1,0 +1,49 @@
+#canvas {
+	width:  100%;
+	/*margin:  20px auto;*/
+	overflow: auto;
+	
+	/*padding: 1%;
+	background: #ccc;*/
+	}
+
+/*generic css for all elements*/
+img {
+	display: block; /*needed to avoid alignment with baseline of text*/
+}
+
+.line {
+	float: left;
+	width: 100%;
+	display: block;
+	position: relative; /*prevents shifting when changing viewport in IE;thanks to Alan Gresley*/
+}
+
+.item {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	left: 100%;
+}
+
+.sap-content {
+	overflow: hidden;
+}
+
+#line1 {
+}
+
+#item1 {
+	margin-left: -100%;
+	width: 35%;
+}
+
+#item2 {
+	margin-left: -65%;
+	width: 65%;
+}
+
+#item268 {
+	margin-left: -67%;
+	width: 67%;
+}

@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>cal</title>
+<link rel="stylesheet" href="/css/main.css" />
+<!--  link href="/css/jquery-ui-1.8.2.custom.css" rel="stylesheet" type="text/css"/-->
+<link rel="stylesheet" href="/css/fullcalendar-1.4.9.css" />
+<link rel="stylesheet" href="/css/itda.css" />
+        <link rel="stylesheet" href="/css/sap-threecol.css" />
+
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<link type="text/css"
+	href="/jquery/css/smoothness/jquery-ui-1.8.7.custom.css"
+	rel="stylesheet" />
+<script type="text/javascript" src="/jquery/js/jquery-1.4.4.min.js"></script >
+
+
+<script type="text/javascript"
+	src="/jquery/js/jquery-ui-1.8.7.custom.min.js"></script>
+
+<script type='text/javascript' src='/js/fullcalendar-1.4.9.js'></script>
+<script type="text/javascript" src="/js/eventFetch.js"></script>
+
+
+
+</head>
+<body>
+
+<div style="height: 230px;width:290px" role="tabpanel" class="ui-accordion-content ui-helper-reset ui-widget-content ui-corner-bottom ui-accordion-content-active" id="repeatad-accordion">
+			
+			<div style="display: block;" id="buttons">
+				<span style="float: left;">                
+					<input name="cancel" class="cancel-button" value="" id="cancel" type="reset">
+				</span>
+				<span style="float: right;">
+					<input name="save" class="save-button" value="" id="save-repeatad" type="submit">
+				</span>
+				<br><br>
+
+			</div>
+
+<div class="hasDatepicker" id="repeatad-calendar">
+<div style="display: block; border:1px solid red"
+	class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
+<div
+	class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
+	class="ui-datepicker-prev ui-corner-all"
+	onclick="DP_jQuery_1295241038864.datepicker._adjustDate('#repeatad-calendar', -1, 'M');"
+	title=""><span class="ui-icon ui-icon-circle-triangle-w"></span></a><a
+	class="ui-datepicker-next ui-corner-all"
+	onclick="DP_jQuery_1295241038864.datepicker._adjustDate('#repeatad-calendar', +1, 'M');"
+	title=""><span class="ui-icon ui-icon-circle-triangle-e"></span></a>
+<div class="ui-datepicker-title"><span class="ui-datepicker-month">January</span>&nbsp;<span
+	class="ui-datepicker-year">2011</span></div>
+</div>
+<table class="ui-datepicker-calendar" style='border:1px solid blue'>
+	<thead>
+		<tr>
+			<th class="ui-datepicker-week-end"><span title="Sunday">S</span></th>
+			<th><span title="Monday">M</span></th>
+			<th><span title="Tuesday">T</span></th>
+			<th><span title="Wednesday">W</span></th>
+			<th><span title="Thursday">T</span></th>
+			<th><span title="Friday">F</span></th>
+			<th class="ui-datepicker-week-end"><span title="Saturday">S</span></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td
+				class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td class=" ui-datepicker-week-end planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">1</a></td>
+		</tr>
+		<tr>
+			<td class=" ui-datepicker-week-end "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">2</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">3</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">4</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">5</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">6</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">7</a></td>
+			<td class=" ui-datepicker-week-end planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">8</a></td>
+		</tr>
+		<tr>
+			<td class=" ui-datepicker-week-end "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">9</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">10</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">11</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">12</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">13</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">14</a></td>
+			<td class=" ui-datepicker-week-end planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">15</a></td>
+		</tr>
+		<tr>
+			<td class=" ui-datepicker-week-end  ui-datepicker-today"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default ui-state-highlight" href="#">16</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">17</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">18</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">19</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">20</a></td>
+			<td class=" "
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">21</a></td>
+			<td class=" ui-datepicker-week-end planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">22</a></td>
+		</tr>
+		<tr>
+			<td class=" ui-datepicker-week-end planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">23</a></td>
+			<td class=" planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">24</a></td>
+			<td class=" planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">25</a></td>
+			<td class=" planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">26</a></td>
+			<td class=" planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">27</a></td>
+			<td class=" planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">28</a></td>
+			<td class=" ui-datepicker-week-end planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">29</a></td>
+		</tr>
+		<tr>
+			<td
+				class=" ui-datepicker-week-end planner-state-active ui-datepicker-current-day"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default ui-state-active" href="#">30</a></td>
+			<td class=" planner-state-active"
+				onclick="DP_jQuery_1295241038864.datepicker._selectDay('#repeatad-calendar',0,2011, this);return false;"><a
+				class="ui-state-default" href="#">31</a></td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+			<td
+				class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+<!-- ////////////////// -->
+</div>
+
+
+
+
+</body>
+</html>
